@@ -21,7 +21,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('newsletter/suscripcion/guardar','NewsletterController@store')->name('newsletter.store');
-
+Route::get('landingpage','MenuController@landing');
+Route::post('landingpage','LandingPageController@store')->name('landing.store');
 
 
 //GRUPO DE RUTAS PARA SUSCRIBSIÓN

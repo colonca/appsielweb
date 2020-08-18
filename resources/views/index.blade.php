@@ -4,6 +4,10 @@
     <link href="{{asset('css/index.css')}}" rel="stylesheet"></head>
 @endsection
 
+@section('title')
+    <title>Sistemas inventario contable facturación| APPSIEL</title>
+@endsection
+
 @section('content')
     <section class="hero">
         <div class="wraper">

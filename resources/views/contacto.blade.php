@@ -4,6 +4,10 @@
     <link href="{{asset('css/contacto.css')}}" rel="stylesheet"></head>
 @endsection
 
+@section('title')
+    <title>Contacto | APPSIEL</title>
+@endsection
+
 @section('content')
     <div class="contacto-hero">
         <div class="wraper">
