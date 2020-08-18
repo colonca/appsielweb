@@ -201,7 +201,7 @@
             ).done(function (msg){
                 if (msg.status == 'ok'){
                     Swal.fire({
-                        position: 'top-end',
+                        position: 'bottom-end',
                         text:msg.response
                     });
                 }else{
