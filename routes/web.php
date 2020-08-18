@@ -22,9 +22,18 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('newsletter/suscripcion/guardar','NewsletterController@store')->name('newsletter.store');
 
+
+
 //GRUPO DE RUTAS PARA SUSCRIBSIÓN
 //Route::group(['middleware' => ['auth'], 'prefix' => 'admin'], function () {
 //    //SOLICIUD
 //    Route::resource('newsletter', 'NewsletterController');
 //});
+
+
+//GRUPO DE RUTAS PARA SUSCRIBSIÓN
+Route::group(['middleware' => ['guest'], 'prefix' => 'home'], function () {
+   //SOLICIUD
+   Route::get('contactanos','MenuController@contactanos')->name('menu.contactanos');
+});
 
