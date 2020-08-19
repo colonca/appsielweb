@@ -1,6 +1,6 @@
 <header class="header" id="header">
     <div class="wraper">
-        <img class="header__logo" src="{{asset('images/Lg_ 1.png')}}" alt="appsiel">
+        <a href="{{url('/')}}"> <img class="header__logo" src="{{asset('images/Lg_ 1.png')}}" alt="appsiel"> </a>
         <label class="menu-open" for="open">
             <div class="menu__barra"></div>
             <div class="menu__barra"></div>
@@ -23,7 +23,7 @@
                 <li class="nav__item"><a class="nav__link" href="">precios</a></li>
                 <li class="nav__item"><a class="nav__link" href="">portafolio <i class="fas fa-sort-down"></i></a></li>
                 <li class="nav__item"><a class="nav__link" href="">blog</a></li>
-                <li class="nav__item"><a class="nav__link activo" href="">demo</a></li>
+                <li class="nav__item"><a class="nav__link activo" href="http://demo.appsiel.com.co/login" target="_blank">demo</a></li>
             </ul>
         </nav>
     </div>

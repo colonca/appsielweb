@@ -21,18 +21,8 @@
 <body id=landing-page>
 <main>
     <section class="section section-relative" id=page-block-8ebj5wxjmle data-at=section>
-
-        <div class="section-holder-border item-block item-absolute" data-at=section-border></div>
-        <div class="section-holder-overlay item-block item-absolute" data-at=section-overlay></div>
         <div class=section-block>
             <div class="section-inner section-fit section-relative">
-                <div class="widget item-absolute headline" id=element-6 data-at=headline>
-                    <div class=contents>
-                        <h1>
-                            <p class="x_7d3ad679 x_41a894dc"><p class="x_abeb1804 x_e0654353"> <p class="x_abeb1804 x_e0654353"><strong><span class=x_f2074b6c>Cinco estrategias para el crecimiento empresarial</span></strong><p class="x_abeb1804 x_e0654353"> </p>
-                        </h1>
-                    </div>
-                </div>
                 <div class="widget item-absolute headline" id=element-5 data-at=headline>
                     <div class=contents>
                         <h5>
@@ -42,7 +32,7 @@
                 </div>
                 <div class="widget item-absolute paragraph" id=element-7 data-at=paragraph>
                     <div class=contents>
-                        <p class=x_fae6260b><span class=x_f2074b6c>Normalmente, cuando creamos un negocio o empresa nuestro sueño es tener libertad e independencia; sin embargo, muchas veces terminamos siendo esclavos de nuestra propia creación.</span></p>
+                    	<img class="hero__ilustracion" src="{{asset('images/portada_ebook.png')}}" alt="ebook" width="100%" >
                     </div>
                 </div>
                 <div class="widget item-absolute" id=element-8>
@@ -89,6 +79,7 @@
             </div>
         </div>
     </section>
+    
     <section class="section section-relative" id=page-block-6i8opcv8uwj data-at=section>
 
         <div class="section-holder-border item-block item-absolute" data-at=section-border></div>
@@ -98,26 +89,26 @@
                 <div class="widget item-absolute headline" id=element-62 data-at=headline>
                     <div class=contents>
                         <h5>
-                            <p class="x_4cb1d84e x_2548b6bb"> <p class="x_01475da3 x_25a5a462"><span class=x_854df8cf>PASOS</span><p class="x_4cb1d84e x_2548b6bb"> </p>
+                            <p class="x_4cb1d84e x_2548b6bb"> <p class="x_01475da3 x_25a5a462"><span class=x_854df8cf>LO QUE APRENDERÁ</span><p class="x_4cb1d84e x_2548b6bb"> </p>
                         </h5>
                     </div>
                 </div>
                 <div class="widget item-absolute headline" id=element-63 data-at=headline>
                     <div class=contents>
                         <h1>
-                            <p class="x_7d3ad679 x_5c6925cc"> <p class="x_b614627d x_47b745f5"><span class=x_f2074b6c>Estrategias para el crecimiento empresarial</span><p class="x_7d3ad679 x_5c6925cc"> </p>
+                            <p class="x_7d3ad679 x_5c6925cc"> <p class="x_b614627d x_47b745f5"><span class=x_f2074b6c>5 Estrategias para el crecimiento empresarial</span><p class="x_7d3ad679 x_5c6925cc"> </p>
                         </h1>
                     </div>
                 </div>
                 <div class="widget item-absolute paragraph" id=element-64 data-at=paragraph>
                     <div class=contents>
-                        <p class="x_6592d9fc x_fae6260b"><span class=x_f2074b6c>Su idea ya está materializada, su negocio funcionando, gestiona proveedores, tiene clientes, recibe ingresos, muchos o no tantos; pero recibe. ¡Felicitaciones! usted tiene una empresa.</span></p>
+                        <p class="x_6592d9fc x_fae6260b"><span class=x_f2074b6c>Redescubra las habilidades que lo han llevado a la creación de su negocio y la busqueda de crecimiento continuo.</span></p>
                     </div>
                 </div>
                 <div class="widget item-absolute headline" id=element-65 data-at=headline>
                     <div class=contents>
                         <h3>
-                            <p class="x_00098c5b x_efc646ab"><p class="x_da6ad2be x_70463731"> <p class="x_da6ad2be x_70463731"><span class=x_f2074b6c>Recuerde que el primer paso es el más difícil y usted ya lo dió</span><p class="x_da6ad2be x_70463731"> </p>
+                            <p class="x_00098c5b x_efc646ab"><p class="x_da6ad2be x_70463731"> <p class="x_da6ad2be x_70463731"><span class=x_f2074b6c>MINDSET EMPRESARIAL</span><p class="x_da6ad2be x_70463731"> </p>
                         </h3>
                     </div>
                 </div>
@@ -156,7 +147,7 @@
                 </div>
                 <div class="widget item-absolute paragraph" id=element-76 data-at=paragraph>
                     <div class=contents>
-                        <p class="x_ccd98165 x_bb1de03d"><span class=x_f2074b6c>Cuando hay problemas en una empresa es porque algo anda mal en una de estas tres áreas. Hay que clasificar nuestras actividades diarias y asignación de responsabilidades con base en estas tres áreas y tener un plan estratégico para cada una de ellas.</span></p>
+                        <p class="x_ccd98165 x_bb1de03d"><span class=x_f2074b6c>En qué enfocar sus actividades para lograr un crecimiento sostenido. Hay que clasificar nuestras actividades diarias y asignación de responsabilidades con base en estas tres áreas y tener un plan estratégico para cada una de ellas.</span></p>
                     </div>
                 </div>
                 <div class="widget item-absolute headline" id=element-77 data-at=headline>
@@ -168,7 +159,7 @@
                 </div>
                 <div class="widget item-absolute paragraph" id=element-78 data-at=paragraph>
                     <div class=contents>
-                        <p class="x_6592d9fc x_fae6260b"><span class=x_f2074b6c>Tal vez no sea un tema elegante para hablar en reuniones familiares o sociales, pero el dinero no debe ser un tabú en las empresas.</span></p>
+                        <p class="x_6592d9fc x_fae6260b"><span class=x_f2074b6c>Cómo gestionar el combustible principal del sostenimiento de su negocio: EL DINERO.</span></p>
                     </div>
                 </div>
                 <div class="widget item-absolute headline" id=element-79 data-at=headline>

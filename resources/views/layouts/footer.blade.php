@@ -3,8 +3,8 @@
         <div class="footer__content">
             <div class="footer__item">
                 <img class="logo" src="./images/Lg_ 1.png" alt="">
-                <p>En APPSIEL, Desarrollamos y comercializamos aplicaciones web como servicio de software en la nube (SaaS) y brindamos acompañamiento para promover el crecimiento empresarial en nuestra región, nuestro país y el mundo entero.</p>
-                <h3>Nuestras Redes Sociales</h3>
+                <p>En APPSIEL S.A.S. desarrollamos y comercializamos aplicaciones web como servicio de software en la nube (SaaS) y brindamos acompañamiento para promover el crecimiento empresarial en nuestra región, nuestro país y el mundo entero.</p>
+                <h3>Socialicemos</h3>
                 <ul class="redes">
                     <li><a href="" class="red"><i class="fab fa-facebook-f"></i></a></li>
                     <li><a href="" class="red"><i class="fab fa-instagram"></i></a></li>
@@ -12,11 +12,11 @@
                 </ul>
             </div>
             <div class="footer__item">
-                <h3 style="margin-bottom: 10px;">Contactanos</h3>
+                <h3 style="margin-bottom: 10px;">Contáctanos</h3>
                 <ul>
-                    <li>Tel: 3017764758</li>
-                    <li>Correo: colonca1999@gmail.com</li>
-                    <li>Direccion: calle 18d # 36-125</li>
+                    <li><i class="fa fa-mobile"></i> +57 (314) 656 1062</li>
+                    <li><i class="fa fa-envelope"></i> <a href="mailto:contacto@appsiel.com.co" target="_blank" title="contacto@appsiel.com.co"> contacto@appsiel.com.co </a></li>
+                    <li><i class="fa fa-envelope"></i> <a href="mailto:adalberto.perez@appsiel.com.co" target="_blank" title="adalberto.perez@appsiel.com.co"> adalberto.perez@appsiel.com.co </a></li>
                 </ul>
             </div>
             <div class="footer__item">
@@ -26,6 +26,6 @@
                 </div>
             </div>
         </div>
-        <p class="copyright">Copyright © 2020 Appsiel | Todos los derechos reservados·<a href="" class="politicas">Política de Privacidad, Aviso Legal y Cookies</a>·</p>
+        <p class="copyright">Copyright © 2020 APPSIEL S.A.S. | Todos los derechos reservados·<a href="" class="politicas">Política de Privacidad, Aviso Legal y Cookies</a>·</p>
     </div>
 </footer>
