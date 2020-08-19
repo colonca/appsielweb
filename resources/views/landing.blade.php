@@ -26,14 +26,14 @@
     <section class="section section-relative" id=page-block-8ebj5wxjmle data-at=section>
         <div class=section-block>
             <div class="section-inner section-fit section-relative" id="form_campania">
-                <div class="widget item-absolute headline" id=element-5 data-at=headline>
+                <div class="widget item-absolute headline" id=element-5 data-at=headline style="top:10rem;">
                     <div class=contents>
                         <h5>
                             <p class="x_9811881d x_3206b8d5"><span class=x_854df8cf>Libro 100% gratuito</span><p class="x_9811881d x_3206b8d5"> </p>
                         </h5>
                     </div>
                 </div>
-                <div class="widget item-absolute paragraph" id=element-7 data-at=paragraph>
+                <div class="widget item-absolute paragraph" id=element-7 data-at=paragraph style="top:14rem; left:-50px;width:26rem;height: 23rem;">
                     <div class=contents>
                     	<img class="hero__ilustracion" src="{{asset('images/portada_ebook.png')}}" alt="ebook" width="100%" >
                     </div>
@@ -63,7 +63,7 @@
                 <div class="widget item-absolute headline" id=element-9 data-at=headline>
                     <div class=contents>
                         <h1>
-                            <p class="x_5f0ed501 x_12f16b9a"> 
+                            <p class="x_5f0ed501 x_12f16b9a">
                             	<strong>
                             		<span class=x_e33f2b34>Una guía eficaz</span>
                             	</strong>
@@ -225,29 +225,17 @@
                         </h3>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-    	<div class=section-block>
-            	<div class=contents>
-
-            		<form novalidate class="form email-form contents form-labels-outside-top" data-at=form>
-
-            			<div class="item-absolute form-btn-geometry">
-                            <a type="submit" class="btn form-btn item-block" data-at="form-button" href="#form_campania" style="background: orange;">
-                                QUIERO EL LIBRO
-                            </a>
-                        </div>
-                    </form>
-
+                <div style="position: absolute; left:50%; bottom:20px; transform: translateX(-50%);">
+                    <a type="submit" class="btn form-btn item-block" data-at="form-button" href="#form_campania" style="background: orange; color:white; padding:10px; font-weight: bold;">
+                        QUIERO EL LIBRO
+                    </a>
                 </div>
             </div>
+
+        </div>
     </section>
-	
 	<br><br>
-    
+
     <section class="section section-relative" data-at=section>
          <video src="{{asset('videos/appsiel.mp4')}}" style="width:100%;height: 450px;" preload="none" playsinline controls muted loop poster="{{asset('images/appsiel-poster.jpg')}}" autoplay></video>
     </section>
@@ -272,15 +260,11 @@
     <section>
     	<div class=section-block>
             	<div class=contents>
-
-            		<form novalidate class="form email-form contents form-labels-outside-top" data-at=form>
-
-            			<div class="item-absolute form-btn-geometry">
-                            <a type="submit" class="btn form-btn item-block" data-at="form-button" href="#form_campania" style="background: orange;">
-                                QUIERO EL LIBRO
-                            </a>
-                        </div>
-                    </form>
+                    <div style="display: flex; justify-content: center;">
+                        <a type="submit" class="btn" data-at="form-button" href="#form_campania" style="background: orange; color:white; padding:10px; font-weight: bold;">
+                            QUIERO EL LIBRO
+                        </a>
+                    </div>
 
                 </div>
             </div>
