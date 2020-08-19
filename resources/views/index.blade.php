@@ -4,17 +4,13 @@
     <link href="{{asset('css/index.css')}}" rel="stylesheet"></head>
 @endsection
 
-@section('title')
-    <title>Sistemas inventario contable facturación| APPSIEL</title>
-@endsection
-
 @section('content')
     <section class="hero">
         <div class="wraper">
             <img class="hero__background" src="./svg/background.svg" alt="">
             <div class="hero__content">
                 <div class="hero__description">
-                    <h1 class="hero__title">sistemas para el crecimiento empresarial</h1>
+                    <h1 class="hero__title">Sistemas para el crecimiento empresarial</h1>
                     <p class="hero__text">Somos una empresa dedicada al desarrollo de sistemas de información que aumenten la productividad de nuestros clientes.</p>
                 </div>
                 <img class="hero__ilustracion" src="{{asset('svg/ilustracion.svg')}}" alt="">
@@ -27,6 +23,21 @@
         </div>
         <div class="background__grid">
             <div class="servicios__grid">
+                <div class="servicios__item">
+                    <img class="logo" src="{{asset('images/pixeltrue-plan-1 1.png')}}" alt="Diseño web">
+                    <h3 class="title">Software ERP</h3>
+                    <p class="descricion">Administración en tiempo real del flujo financiero de su negocio. Controle eficazmente todos las operaciones y transacciones de su empresa.</p>
+                </div>
+                <div class="servicios__item">
+                    <img class="logo" src="{{asset('images/school-teacher.png')}}" alt="Diseño web">
+                    <h3 class="title">Plataforma de Gestión Educativa</h3>
+                    <p class="descricion">Todas las herramientas en un solo lugar para la gestión académica, disciplinaria y administrativa de su institución. También para empresas: creación y gestión de su propia  universidad corporativa.</p>
+                </div>
+                <div class="servicios__item">
+                    <img class="logo" src="{{asset('images/marginalia-679 1.png')}}" alt="Diseño web">
+                    <h3 class="title">Gestión de consultorios médicos</h3>
+                    <p class="descricion">Control de consultorios, profesionales de la salud, historias clínicas, anamnesis, citas médicas, exámenes, tratamientos y muchos más. Facturación, control de ingresos y gastos. Gestión administrativa total.</p>
+                </div>
                 <div class="servicios__item">
                     <img class="logo" src="{{asset('images/clip-online-education-4.png')}}" alt="Diseño web">
                     <h3 class="title">Diseño web</h3>
@@ -42,21 +53,6 @@
                     <h3 class="title">Consultoría en gestión empresarial</h3>
                     <p class="descricion">Todos los conocimientos, habilidades y experiencia de un equipo de profesionales al servicio de su negocio. Análisis financiero y diseño de plan estratégico.</p>
                 </div>
-                <div class="servicios__item">
-                    <img class="logo" src="{{asset('images/school-teacher.png')}}" alt="Diseño web">
-                    <h3 class="title">Plataforma de Gestión Educativa</h3>
-                    <p class="descricion">Todas las herramientas en un solo lugar para la gestión académica, disciplinaria y administrativa de su institución. También para empresas: creación y gestión de su propia  universidad corporativa.</p>
-                </div>
-                <div class="servicios__item">
-                    <img class="logo" src="{{asset('images/pixeltrue-plan-1 1.png')}}" alt="Diseño web">
-                    <h3 class="title">Software ERP</h3>
-                    <p class="descricion">Administración en tiempo real del flujo financiero de su negocio. Controle eficazmente todos las operaciones y transacciones de su empresa.</p>
-                </div>
-                <div class="servicios__item">
-                    <img class="logo" src="{{asset('images/marginalia-679 1.png')}}" alt="Diseño web">
-                    <h3 class="title">Gestión de consultorios médicos</h3>
-                    <p class="descricion">Control de consultorios, profesionales de la salud, historias clínicas, anamnesis, citas médicas, exámenes, tratamientos y muchos más. Facturación, control de ingresos y gastos. Gestión administrativa total.</p>
-                </div>
             </div>
         </div>
     </main>
@@ -65,12 +61,12 @@
             <h2>Nuestros productos</h2>
             <nav class="productos__menuwraper">
                 <ul class="productos__menu">
+                    <li class="menu__item" data-id="gestion-empresarial">Gestion Empresarial</li>
+                    <li class="menu__item" data-id="gestion-educativa">Gestion Educativa</li>
+                    <li class="menu__item" data-id="gestion-salud">Gestion Salud</li>
                     <li class="menu__item activo" data-id="diseño-web">Diseño Web</li>
                     <li class="menu__item" data-id="desarrollo-de-apps">Desarrollo de Apps</li>
                     <li class="menu__item" data-id="desarrollo-web">Desarrollo Web</li>
-                    <li class="menu__item" data-id="gestion-educativa">Gestion Educativa</li>
-                    <li class="menu__item" data-id="gestion-empresarial">Gestion Empresarial</li>
-                    <li class="menu__item" data-id="gestion-salud">Gestion Salud</li>
                 </ul>
             </nav>
             <div class="productos__grid activo-servicio" id="diseño-web">
@@ -130,8 +126,8 @@
     <section class="newsletter">
         <div class="wraper">
             <div class="newsletter__content">
-                <h2 class="newsletter__title">NEWSLETTER</h2>
-                <p class="newsletter__descripcion">Suscribete a nuestro newsletter y te haremos llegar nuestras promociones, descuentos, productos y todo el contenido de tecnología que nuestro maravilloso equipo prepara cada semana.</p>
+                <h2 class="newsletter__title">Boletín semanal</h2>
+                <p class="newsletter__descripcion">Suscribete a nuestro newsletter semanal y te haremos llegar la mejor información para impulsar el crecimiento de tu negocio. Además de promociones, descuentos, productos y todo el contenido de tecnología que nuestro maravilloso equipo prepara cada semana.</p>
                 <form id="formulario" method="post" action="{{route('newsletter.store')}}">
                     @csrf
                     <div class="newsletter__suscribete"><input name="email" type="email" placeholder="user@example.com" required>
@@ -141,52 +137,17 @@
             </div>
         </div>
     </section>
-    <section class="our__team">
-        <div class="wraper">
-            <div class="our__team__content">
-                <h2 class="our__team__title">Nuestro Equipo</h2>
-                <blockquote class="person">
-                    <img class="person__img" src="./images/jonny.jpg" alt="Camilo Andres Colon Cañizares">
-                    <div class="person__descripcion">
-                        <h3 class="person__nombre">Camilo Andres Colon Cañizares</h3>
-                        <p class="person__profesion">fullstack</p>
-                        <cite>“vive aprendiendo la vida nunca para de enseñar ”</cite>
-                    </div>
-                </blockquote>
-                <div class="peoples">
-                    <div class="worker">
-                        <img class="worker__img" src="./images/Selmary.jpg" alt="Selmary Medina Pérez">
-                        <div class="worker__descripcion">
-                            <h3 class="worker__nombre">Selmary Medina Pérez</h3>
-                            <p class="worker__profesion">Community Manager</p>
-                        </div>
-                    </div>
-                    <div class="worker">
-                        <img class="worker__img" src="./images/jonny.jpg" alt="Camilo Andres Colon Cañizares">
-                        <div class="worker__descripcion">
-                            <h3 class="worker__nombre">Camilo Andres Colon Cañizares</h3>
-                            <p class="worker__profesion">fullstack</p>
-                        </div>
-                    </div>
-                    <div class="worker">
-                        <img class="worker__img" src="./images/jordan.jpg" alt="Jordan Jhonsson Cuadro Negrete">
-                        <div class="worker__descripcion">
-                            <h3 class="worker__nombre">Jordan Jhonsson Cuadro Negrete</h3>
-                            <p class="worker__profesion">Backend</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    
+    <!-- @ include('dream_team') -->
+
     <section class="presupuesto">
         <div class="wraper">
             <div class="presupuesto_content">
                 <div class="presupuesto_descripcion">
-                    <h2>¿Te gustaría crear un proyecto con nosotros?</h2>
-                    <p>Solicita presupuesto para tu web, app o desarrollo a medida. Te guiaremos para desarrollar tu idea con el sistema más eficiente según el código de programación que necesites.</p>
+                    <h2>¿Te gustaría aumentar la productividad en tu negocio?</h2>
+                    <p>Contactanos y te daremos asesoría personalizada. Escogiendo las mejores herramientas según tu necesidad.</p>
                 </div>
-                <a class="btn" href="{{route('menu.contactanos')}}">SOLICITAR PRESUPUESTO</a>
+                <a class="btn" href="{{route('menu.contactanos')}}">¡Si quiero!</a>
             </div>
         </div>
     </section>
