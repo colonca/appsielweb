@@ -311,8 +311,9 @@
                    Swal.fire({
                        text: msg.message
                    });
-                  $('#nombre').val('');
-                  $('#correo').val('');
+                  setTimeout(()=>{
+                      window.location.reload();
+                  },3000);
                }else{
                    Swal.fire({
                        title:'Error',

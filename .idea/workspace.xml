@@ -21,9 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="40ea7d65-9aae-44db-b00d-9eae227d89fc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LandingPageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LandingPageController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/landing.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/landing.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +152,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/storage/app/public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -200,7 +198,8 @@
       <workItem from="1597765300134" duration="3843000" />
       <workItem from="1597773080201" duration="4855000" />
       <workItem from="1597853017246" duration="3569000" />
-      <workItem from="1598018814727" duration="10935000" />
+      <workItem from="1598018814727" duration="12116000" />
+      <workItem from="1598036770158" duration="216000" />
     </task>
     <servers />
   </component>
@@ -224,12 +223,12 @@
       <screen x="2390" y="0" width="1366" height="768" />
     </state>
     <state x="2811" y="142" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1024.0.1366.768/0.0.1024.723/2390.0.1366.768@2390.0.1366.768" timestamp="1598026995491" />
-    <state x="2853" y="129" width="424" height="483" key="FileChooserDialogImpl" timestamp="1598028965396">
+    <state x="2853" y="129" width="424" height="483" key="FileChooserDialogImpl" timestamp="1598033514849">
       <screen x="2390" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="121" width="424" height="483" key="FileChooserDialogImpl/0.0.1366.723@0.0.1366.723" timestamp="1597780948419" />
     <state x="463" y="154" key="FileChooserDialogImpl/0.30.1366.738@0.30.1366.738" timestamp="1597352309129" />
-    <state x="2853" y="129" key="FileChooserDialogImpl/1024.0.1366.768/0.0.1024.723/2390.0.1366.768@2390.0.1366.768" timestamp="1598028965396" />
+    <state x="2853" y="129" key="FileChooserDialogImpl/1024.0.1366.768/0.0.1024.723/2390.0.1366.768@2390.0.1366.768" timestamp="1598033514849" />
     <state x="2390" y="0" width="607" height="768" key="find.popup" timestamp="1597375983693">
       <screen x="2390" y="0" width="1366" height="768" />
     </state>
