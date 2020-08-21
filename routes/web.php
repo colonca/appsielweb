@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return new \App\Mail\CampañaEbook();
 });
 
 Auth::routes();

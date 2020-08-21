@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\LandingPage;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 class LandingPageController extends Controller
 {
@@ -11,10 +12,17 @@ class LandingPageController extends Controller
 
         $request->correo = strtoupper($request->correo);
 
-        $request->validate([
-            'nombre' => 'required',
-            'correo' => 'required|unique:landing_page'
+        $validate = Validator::make($request->all(),[
+            'correo' => 'required|email',
+            'nombre' => 'required|email',
         ]);
+
+        if($validate->fails()){
+            return response()->json([
+                'status' => 'validate',
+                'message' => $validate->errors()
+            ]);
+        }
 
         $landing = new LandingPage($request->all());
         foreach ($landing as $key => $value) {
