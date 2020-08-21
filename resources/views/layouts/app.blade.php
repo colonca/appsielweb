@@ -10,6 +10,7 @@
     <title> @yield('title') </title>    
 
     <link rel="icon" type="image/png" href="{{asset('images/favicon.ico')}}" />
+    
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/33bf1ad68d.js" crossorigin="anonymous"></script>
 

@@ -15,6 +15,19 @@
 <meta name=robots content=noindex,nofollow>
 <link rel=canonical href=http://www.appsiel.com.co/landing-page>
 <title>Cinco estrategias para el crecimiento empresarial</title>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176059764-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176059764-1');
+</script>
+
+
+
 <link rel="stylesheet" href="{{asset('css/landing.css')}}">
 </head>
 <body id=landing-page>

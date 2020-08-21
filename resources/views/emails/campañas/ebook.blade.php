@@ -1,5 +1,5 @@
 @component('mail::message')
-# Hola {{ explode(' ', $user->name)[0] }}
+# Hola {{ explode(' ', $user->name)[0] }},
 
 Te queremos dar las gracias por tu interés en nuestro libro: <strong>Cinco estrategias para un crecimiento empresarial.</strong>
 
