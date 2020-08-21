@@ -56,7 +56,7 @@ class LandingPageController extends Controller
     }
 
     public function documento(){
-        return response()->download(storage_path('app/public/docs/1587639685.pdf'));
+        return response()->download(public_path('docs/1587639685.pdf'));
     }
 
 }

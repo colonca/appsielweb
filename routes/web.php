@@ -14,9 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $user = new \stdClass();
-    $user->name = 'CAMILO ANDRES COLON CAÑIZARES';
-    return new \App\Mail\CampañaEbook($user);
+   return view('index');
 });
 
 Auth::routes();

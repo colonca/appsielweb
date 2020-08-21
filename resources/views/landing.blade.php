@@ -41,11 +41,9 @@
                     <form novalidate id="form" class="form email-form contents form-labels-outside-top" method="post" data-id=element-3 data-at=form action="">
                         @csrf
                         <label class="form-label-title form-label-outside form-label" for=field-3f8d0a04e94f734021951ca03ec8c0c3-0 data-at=form-text-title>Nombre</label>
-                        <input id=field-3f8d0a04e94f734021951ca03ec8c0c3-0 class="form-input form-input-text required" data-at=form-text type=text name="nombre" value title=Nombre placeholder data-label-inside=Nombre required="required">
+                        <input id=field-3f8d0a04e94f734021951ca03ec8c0c3-0 class="form-input form-input-text required" data-at=form-text type=text id="nombre" name="nombre" value title=Nombre placeholder data-label-inside=Nombre required="required">
                         <label class="form-label-title form-label-outside form-label" for=field-3f8d0a04e94f734021951ca03ec8c0c3-1 data-at=form-email-title>Correo Electrónico</label>
-                        <input id=field-3f8d0a04e94f734021951ca03ec8c0c3-1 class="form-input form-input-text required" type=email name="correo" value title="Correo Electronico" data-label-inside="Correo Electronico" data-at=form-email placeholder required="required">
-
-
+                        <input id=field-3f8d0a04e94f734021951ca03ec8c0c3-1 class="form-input form-input-text required" type=email name="correo" id="correo" value title="Correo Electronico" data-label-inside="Correo Electronico" data-at=form-email placeholder required="required">
                         <div class="item-absolute form-btn-geometry">
                             <button onclick="guardar(event)" type="submit" class="btn form-btn item-block" data-at=form-button>
                                 LO QUIERO
@@ -313,6 +311,8 @@
                    Swal.fire({
                        text: msg.message
                    });
+                  $('#nombre').val('');
+                  $('#correo').val('');
                }else{
                    Swal.fire({
                        title:'Error',
