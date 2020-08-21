@@ -14,11 +14,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return new \App\Mail\CampañaEbook();
+    $user = new \stdClass();
+    $user->name = 'CAMILO ANDRES COLON CAÑIZARES';
+    return new \App\Mail\CampañaEbook($user);
 });
 
 Auth::routes();
 
+Route::get('/campaña/Ebook','LandingPageController@documento')->name('camapaña.ebook');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('newsletter/suscripcion/guardar','NewsletterController@store')->name('newsletter.store');
 Route::get('landingpage','MenuController@landing');

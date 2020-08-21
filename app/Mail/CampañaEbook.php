@@ -17,9 +17,9 @@ class CampañaEbook extends Mailable
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($user)
     {
-
+       $this->user =  $user;
     }
 
     /**
@@ -30,6 +30,7 @@ class CampañaEbook extends Mailable
     public function build()
     {
         return $this->markdown('emails.campañas.ebook')
-                        ->with('user','');
+                       ->subject('¡Aquí está tu libro: Cinco estrategias para un crecimiento empresarial! 🤓')
+                        ->with('user',$this->user);
     }
 }

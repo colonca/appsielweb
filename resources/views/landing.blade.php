@@ -64,9 +64,6 @@
                             		<span class=x_e33f2b34>Una guía eficaz</span>
                             	</strong>
                             </p>
-                            @if(isset($message))
-                                <p class="x_5f0ed501 x_12f16b9a"> <strong><span class=x_e33f2b34>{{$message}}</span></strong></p>
-                            @endif
                         </h1>
                     </div>
                 </div>
@@ -312,7 +309,16 @@
            contentType: false,
            processData: false,
            success: (msg)=>{
-             console.log(msg);
+               if(msg.status == 'ok'){
+                   Swal.fire({
+                       text: msg.message
+                   });
+               }else{
+                   Swal.fire({
+                       title:'Error',
+                       text: msg.message
+                   });
+               }
            }
         });
      }else{
@@ -320,7 +326,6 @@
              text: 'Debe rellenar todos los campos del formulario'
          });
      }
-
    }
 </script>
 </html>
