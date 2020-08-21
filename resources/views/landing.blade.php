@@ -222,7 +222,7 @@
                     </div>
                 </div>
                 <div style="position: absolute; left:50%; bottom:20px; transform: translateX(-50%);">
-                    <a type="submit" class="btn form-btn item-block" data-at="form-button" href="#form_campania" style="background: orange; color:white; padding:10px; font-weight: bold;">
+                    <a type="submit" class="btn form-btn item-block" data-at="form-button" href="#form_campania" style="background: #5257C6; color:white; padding:10px; font-weight: bold;">
                         QUIERO EL LIBRO
                     </a>
                 </div>
@@ -257,7 +257,7 @@
     	<div class=section-block>
             	<div class=contents>
                     <div style="display: flex; justify-content: center;">
-                        <a type="submit" class="btn" data-at="form-button" href="#form_campania" style="background: orange; color:white; padding:10px; font-weight: bold;">
+                        <a type="submit" class="btn" data-at="form-button" href="#form_campania" style="background: #5257C6; color:white; padding:10px; font-weight: bold;">
                             QUIERO EL LIBRO
                         </a>
                     </div>
