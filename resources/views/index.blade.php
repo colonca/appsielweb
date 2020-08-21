@@ -4,6 +4,10 @@
     <link href="{{asset('css/index.css')}}" rel="stylesheet"></head>
 @endsection
 
+@section('title')
+    ..:: APPSIEL - Sistemas para el crecimiento empresarial ::..
+@endsection
+
 @section('content')
     <section class="hero">
         <div class="wraper">

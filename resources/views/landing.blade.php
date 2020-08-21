@@ -271,7 +271,8 @@
             <div class="section-inner section-fit section-relative">
                 <div class="widget item-absolute paragraph" id=element-96 data-at=paragraph>
                     <div class=contents>
-                        <p class=x_938e8cfc><span class=x_f2074b6c>Copyright © 2020 APPSIEL S.A.S. Todos los derechos reservados</span></p>
+                        <p class=x_938e8cfc><span class=x_f2074b6c>
+                        Copyright © 2020 APPSIEL S.A.S. Todos los derechos reservados</span></p>
                     </div>
                 </div>
             </div>

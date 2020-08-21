@@ -33,20 +33,20 @@ class LandingPageController extends Controller
                 $user->name = $request->nombre;
                 $user->email = $request->correo;
                 Mail::to($user->email)->send(new \App\Mail\CampañaEbook($user));
-                $message = 'Gracias por tu interes en nuestro libro,te hemos enviado el libro al correo electronico.';
+                $message = 'Gracias por tu interes en nuestro libro. Hemos enviado el libro al correo electronico ingresado.';
                 return response()->json([
                    'status' => 'ok',
                    'message' => $message
                 ]);
             }else{
-                $message = 'hubo error, por favor intentalo nuevamente más tarde.';
+                $message = 'Hubo un error, por favor intentalo nuevamente más tarde.';
                 return response()->json([
                     'status' => 'error',
                     'message' => $message
                 ]);
             }
         }else{
-            $message = 'hubo error, por favor verifique el formato de los datos enviados.';
+            $message = 'Hubo un error, por favor verifique el formato de los datos enviados.';
             return response()->json([
                 'status' => 'error',
                 'message' => $message
@@ -56,7 +56,7 @@ class LandingPageController extends Controller
     }
 
     public function documento(){
-        return response()->download(public_path('docs/1587639685.pdf'));
+        return response()->download(public_path('docs/ebook_appsiel.pdf'));
     }
 
 }
