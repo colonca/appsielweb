@@ -313,7 +313,7 @@
                    });
                   setTimeout(()=>{
                       window.location.reload();
-                  },3000);
+                  },5000);
                }else{
                    Swal.fire({
                        title:'Error',
