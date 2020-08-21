@@ -33,7 +33,7 @@ class LandingPageController extends Controller
                 $user->name = $request->nombre;
                 $user->email = $request->correo;
                 Mail::to($user->email)->send(new \App\Mail\CampañaEbook($user));
-                $message = 'Gracias por tu interes en nuestro libro. Hemos enviado el libro al correo electronico ingresado.';
+                $message = 'Gracias querer nuestro libro. Hemos enviado una copia al correo electronico ingresado.';
                 return response()->json([
                    'status' => 'ok',
                    'message' => $message
