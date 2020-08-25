@@ -81,7 +81,7 @@
                 <div class="widget item-absolute paragraph" id=element-10 data-at=paragraph>
                     <div class=contents>
                         <p class=x_dc68832a>... y planes de acción para su implementación.</p>
-                        <p style="color: red;"> Ingresa tus datos y recibe el libro en tu correo automáticamente. </p>
+                        <!-- <p style="color: red;"> Ingresa tus datos y recibe el libro en tu correo automáticamente. </p> -->
                     </div>
                 </div>
                 <div class="widget item-absolute" id=element-99>
