@@ -18,7 +18,7 @@ class RecepcionCotizacion extends Mailable
      *
      * @return void
      */
-    public function __construct($nombre,$consulta)
+    public function __construct($nombre,$consulta,$presupuesto)
     {
         $this->nombre = $nombre;
         $this->consulta = $consulta;
@@ -34,7 +34,8 @@ class RecepcionCotizacion extends Mailable
         return $this->markdown('emails.recepcion.cotizacion')
                           ->subject('Nueva Cotización')
                           ->with('nombre',$this->nombre)
-                          ->with('consulta',$this->consulta);
+                          ->with('consulta',$this->consulta)
+                          ->with('presupuesto',$this->presupuesto);
 
     }
 }

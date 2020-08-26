@@ -3,6 +3,8 @@
 
 {{$consulta}}
 
+Presupuesto: {{$presupuesto}}
+
 Fecha, <strong>{{date('Y-m-d')}}</strong>
 {{ config('app.name') }}
 @endcomponent
