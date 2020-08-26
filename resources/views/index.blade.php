@@ -4,6 +4,10 @@
     <link href="{{asset('css/index.css')}}" rel="stylesheet"></head>
 @endsection
 
+@section('title')
+    ..:: APPSIEL - Sistemas para el crecimiento empresarial ::..
+@endsection
+
 @section('content')
     <section class="hero">
         <div class="wraper">
@@ -84,7 +88,7 @@
                     <h2>¿Te gustaría aumentar la productividad en tu negocio?</h2>
                     <p>Contactanos y te daremos asesoría personalizada. Escogiendo las mejores herramientas según tu necesidad.</p>
                 </div>
-                <a class="btn" href="{{route('menu.contactanos')}}">¡Si quiero!</a>
+                <a class="btn" href="{{route('menu.contactanos')}}">¡Si me gustaría!</a>
             </div>
         </div>
     </section>

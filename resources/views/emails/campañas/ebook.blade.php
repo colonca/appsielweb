@@ -1,5 +1,5 @@
 @component('mail::message')
-# !Hola {{$user->name}}
+# Hola {{ explode(' ', $user->name)[0] }},
 
 Te queremos dar las gracias por tu interés en nuestro libro: <strong>Cinco estrategias para un crecimiento empresarial.</strong>
 
@@ -9,8 +9,8 @@ Esperamos que este contenido ayude a que tu negocio crezca y se fortalezca cada 
 Descargar libro
 @endcomponent
 
-Attentamente,<br>
+Atentamente,<br>
 
-Equio <strong>{{ config('app.name') }}</strong>
+Equipo <strong>{{ config('app.name') }}</strong>
 
 @endcomponent

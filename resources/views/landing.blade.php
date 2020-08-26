@@ -15,6 +15,19 @@
 <meta name=robots content=noindex,nofollow>
 <link rel=canonical href=http://www.appsiel.com.co/landing-page>
 <title>Cinco estrategias para el crecimiento empresarial</title>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176059764-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176059764-1');
+</script>
+
+
+
 <link rel="stylesheet" href="{{asset('css/landing.css')}}">
 </head>
 <body id=landing-page>
@@ -68,6 +81,7 @@
                 <div class="widget item-absolute paragraph" id=element-10 data-at=paragraph>
                     <div class=contents>
                         <p class=x_dc68832a>... y planes de acción para su implementación.</p>
+                        <!-- <p style="color: red;"> Ingresa tus datos y recibe el libro en tu correo automáticamente. </p> -->
                     </div>
                 </div>
                 <div class="widget item-absolute" id=element-99>
@@ -228,7 +242,7 @@
 	<br><br>
 
     <section class="section section-relative" data-at=section>
-         <video src="{{asset('videos/appsiel.mp4')}}" style="width:100%;height: 450px;" preload="none" playsinline controls muted loop poster="{{asset('images/appsiel-poster.jpg')}}" autoplay></video>
+         <video src="{{asset('videos/video_presentacion_appsiel_voz_selmary.mp4')}}" style="width:100%;height: 450px;" preload="none" playsinline controls muted loop poster="{{asset('images/appsiel-poster.jpg')}}" autoplay></video>
     </section>
 
     <section class="section section-relative" id=page-block-fedr58tick4 data-at=section>
@@ -271,7 +285,8 @@
             <div class="section-inner section-fit section-relative">
                 <div class="widget item-absolute paragraph" id=element-96 data-at=paragraph>
                     <div class=contents>
-                        <p class=x_938e8cfc><span class=x_f2074b6c>Copyright © 2020 APPSIEL S.A.S. Todos los derechos reservados</span></p>
+                        <p class=x_938e8cfc><span class=x_f2074b6c>
+                        Copyright © 2020 APPSIEL S.A.S. Todos los derechos reservados</span></p>
                     </div>
                 </div>
             </div>
@@ -313,7 +328,7 @@
                    });
                   setTimeout(()=>{
                       window.location.reload();
-                  },3000);
+                  },5000);
                }else{
                    Swal.fire({
                        title:'Error',
