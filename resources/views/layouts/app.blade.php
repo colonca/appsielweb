@@ -19,20 +19,24 @@
         window.dataLayer = window.dataLayer || [];
 
         function gtag() {
-            dataLayer.push(arguments);
+           dataLayer.push(arguments);
         }
 
         gtag('js', new Date());
         gtag('config', 'UA-123891072-1');
     </script>
-    
+
     <!-- Styles -->
     @yield('styles')
+    <livewire:styles />
 </head>
 <body>
+
    @include('layouts.header')
    @yield('content')
    @include('layouts.footer')
+
+   <livewire:scripts />
+   @yield('scripts')
 </body>
-    @yield('scripts')
 </html>

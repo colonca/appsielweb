@@ -2,7 +2,7 @@
     <div class="wraper">
         <div class="footer__content">
             <div class="footer__item">
-                <img class="logo" src="./images/Lg_ 1.png" alt="">
+                <img loading="lazy" class="logo" src="{{asset('images/Lg_ 1.png')}}" alt="">
                 <p>En APPSIEL S.A.S. desarrollamos y comercializamos aplicaciones web como servicio de software en la nube (SaaS) y brindamos acompañamiento para promover el crecimiento empresarial en nuestra región, nuestro país y el mundo entero.</p>
                 <h3>Socialicemos</h3>
                 <ul class="redes">
