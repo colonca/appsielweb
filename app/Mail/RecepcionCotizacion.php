@@ -13,6 +13,7 @@ class RecepcionCotizacion extends Mailable
 
     protected $nombre;
     protected $consulta;
+    protected $presupuesto;
     /**
      * Create a new message instance.
      *
@@ -22,6 +23,7 @@ class RecepcionCotizacion extends Mailable
     {
         $this->nombre = $nombre;
         $this->consulta = $consulta;
+        $this->presupuesto = $presupuesto;
     }
 
     /**
