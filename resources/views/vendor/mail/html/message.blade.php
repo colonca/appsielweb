@@ -2,7 +2,7 @@
 {{-- Header --}}
 @slot('header')
 @component('mail::header', ['url' => config('app.url')])
-{{ config('app.name') }}
+ Nuestra misíon es <strong> facilitar la vida y el crecimiento empresarial </strong>.
 @endcomponent
 @endslot
 

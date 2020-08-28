@@ -19,9 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40ea7d65-9aae-44db-b00d-9eae227d89fc" name="Default Changelist" comment="">
+    <list default="true" id="40ea7d65-9aae-44db-b00d-9eae227d89fc" name="Default Changelist" comment="'Integración con livewire y formulario de contacto'">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/landing.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/landing.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +29,9 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution />
+    <execution>
+      <executable path="composer" />
+    </execution>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -140,6 +141,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
       <path value="$PROJECT_DIR$/vendor/laraveles/spanish" />
+      <path value="$PROJECT_DIR$/vendor/livewire/livewire" />
     </include_path>
   </component>
   <component name="ProjectId" id="1g2yNL5kdAdKj5a7ggfSU1AljMG" />
@@ -152,7 +154,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lanikorera" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -160,18 +162,19 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/images" />
-      <recent name="C:\xampp\htdocs\Appsielweb\public\css" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/storage/app/public" />
       <recent name="$PROJECT_DIR$/resources/views" />
       <recent name="C:\xampp\htdocs\Appsielweb\public\js" />
       <recent name="C:\xampp\htdocs\Appsielweb\public\css" />
       <recent name="C:\xampp\htdocs\Appsielweb\public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/images" />
+      <recent name="C:\xampp\htdocs\Appsielweb\public\css" />
     </key>
   </component>
   <component name="RunManager">
@@ -199,8 +202,35 @@
       <workItem from="1597773080201" duration="4855000" />
       <workItem from="1597853017246" duration="3569000" />
       <workItem from="1598018814727" duration="12116000" />
-      <workItem from="1598036770158" duration="216000" />
+      <workItem from="1598036770158" duration="975000" />
+      <workItem from="1598282054406" duration="725000" />
+      <workItem from="1598282800589" duration="11769000" />
+      <workItem from="1598314331861" duration="4582000" />
+      <workItem from="1598449933241" duration="1310000" />
+      <workItem from="1598454437971" duration="19555000" />
     </task>
+    <task id="LOCAL-00001" summary="'Integración con livewire y formulario de contacto'">
+      <created>1598473825800</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1598473825800</updated>
+    </task>
+    <task id="LOCAL-00002" summary="'Integración con livewire y formulario de contacto'">
+      <created>1598476493700</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1598476493700</updated>
+    </task>
+    <task id="LOCAL-00003" summary="'Integración con livewire y formulario de contacto'">
+      <created>1598477180460</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1598477180460</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,30 +248,59 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="'Integración con livewire y formulario de contacto'" />
+    <option name="LAST_COMMIT_MESSAGE" value="'Integración con livewire y formulario de contacto'" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="2811" y="142" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1598026995491">
       <screen x="2390" y="0" width="1366" height="768" />
     </state>
     <state x="2811" y="142" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1024.0.1366.768/0.0.1024.723/2390.0.1366.768@2390.0.1366.768" timestamp="1598026995491" />
-    <state x="2853" y="129" width="424" height="483" key="FileChooserDialogImpl" timestamp="1598033514849">
-      <screen x="2390" y="0" width="1366" height="768" />
+    <state x="1431" y="273" width="541" height="176" key="ComposerInitDialogKey" timestamp="1598288635800">
+      <screen x="1024" y="0" width="1366" height="768" />
     </state>
-    <state x="463" y="121" width="424" height="483" key="FileChooserDialogImpl/0.0.1366.723@0.0.1366.723" timestamp="1597780948419" />
+    <state x="1431" y="273" width="541" height="176" key="ComposerInitDialogKey/1024.0.1366.768/2390.0.1366.768/0.0.1024.723@1024.0.1366.768" timestamp="1598288635800" />
+    <state x="463" y="121" width="424" height="483" key="FileChooserDialogImpl" timestamp="1598478749371">
+      <screen x="0" y="0" width="1366" height="723" />
+    </state>
+    <state x="463" y="121" width="424" height="483" key="FileChooserDialogImpl/0.0.1366.723@0.0.1366.723" timestamp="1598478749371" />
     <state x="463" y="154" key="FileChooserDialogImpl/0.30.1366.738@0.30.1366.738" timestamp="1597352309129" />
-    <state x="2853" y="129" key="FileChooserDialogImpl/1024.0.1366.768/0.0.1024.723/2390.0.1366.768@2390.0.1366.768" timestamp="1598033514849" />
+    <state x="2853" y="129" key="FileChooserDialogImpl/1024.0.1366.768/0.0.1024.723/2390.0.1366.768@2390.0.1366.768" timestamp="1598037743478" />
+    <state x="1487" y="129" key="FileChooserDialogImpl/1024.0.1366.768/2390.0.1366.768/0.0.1024.723@1024.0.1366.768" timestamp="1598318913589" />
+    <state x="137" y="58" key="MergeDialog" timestamp="1598476707005">
+      <screen x="0" y="0" width="1366" height="723" />
+    </state>
+    <state x="137" y="58" key="MergeDialog/0.0.1366.723@0.0.1366.723" timestamp="1598476707005" />
+    <state x="319" y="115" key="MultipleFileMergeDialog" timestamp="1598476707009">
+      <screen x="0" y="0" width="1366" height="723" />
+    </state>
+    <state x="319" y="115" key="MultipleFileMergeDialog/0.0.1366.723@0.0.1366.723" timestamp="1598476707009" />
+    <state x="1201" y="0" key="SettingsEditor" timestamp="1598288661034">
+      <screen x="1024" y="0" width="1366" height="768" />
+    </state>
+    <state x="1201" y="0" key="SettingsEditor/1024.0.1366.768/2390.0.1366.768/0.0.1024.723@1024.0.1366.768" timestamp="1598288661034" />
+    <state x="283" y="94" key="Vcs.Push.Dialog.v2" timestamp="1598477313916">
+      <screen x="0" y="0" width="1366" height="723" />
+    </state>
+    <state x="283" y="94" key="Vcs.Push.Dialog.v2/0.0.1366.723@0.0.1366.723" timestamp="1598477313916" />
     <state x="2390" y="0" width="607" height="768" key="find.popup" timestamp="1597375983693">
       <screen x="2390" y="0" width="1366" height="768" />
     </state>
     <state x="2390" y="0" width="607" height="768" key="find.popup/1024.0.1366.768/2390.0.1366.768/0.0.1024.723@2390.0.1366.768" timestamp="1597375983693" />
+    <state x="380" y="136" key="git4idea.merge.GitPullDialog" timestamp="1598477307085">
+      <screen x="0" y="0" width="1366" height="723" />
+    </state>
+    <state x="380" y="136" key="git4idea.merge.GitPullDialog/0.0.1366.723@0.0.1366.723" timestamp="1598477307085" />
     <state x="347" y="159" key="run.anything.popup" timestamp="1597778193659">
       <screen x="0" y="0" width="1366" height="723" />
     </state>
     <state x="347" y="159" key="run.anything.popup/0.0.1366.723@0.0.1366.723" timestamp="1597778193659" />
     <state x="2737" y="169" key="run.anything.popup/1024.0.1366.768/2390.0.1366.768/0.0.1024.723@2390.0.1366.768" timestamp="1597722023250" />
-    <state x="2736" y="14" width="672" height="707" key="search.everywhere.popup" timestamp="1598030164326">
-      <screen x="2390" y="0" width="1366" height="768" />
+    <state x="346" y="56" width="672" height="665" key="search.everywhere.popup" timestamp="1598467963065">
+      <screen x="0" y="0" width="1366" height="723" />
     </state>
-    <state x="346" y="56" width="672" height="665" key="search.everywhere.popup/0.0.1366.723@0.0.1366.723" timestamp="1597777701649" />
+    <state x="346" y="56" width="672" height="665" key="search.everywhere.popup/0.0.1366.723@0.0.1366.723" timestamp="1598467963065" />
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.30.1366.738@0.30.1366.738" timestamp="1597347581937" />
     <state x="2736" y="14" width="672" height="707" key="search.everywhere.popup/1024.0.1366.768/0.0.1024.723/2390.0.1366.768@2390.0.1366.768" timestamp="1598030164326" />
   </component>
