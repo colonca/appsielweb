@@ -25,4 +25,14 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    public function quienes_somos()
+    {
+        return view('quienes_somos');
+    }
+
+    public function clientes_appsiel()
+    {
+        return view('clientes_appsiel');
+    }
 }
