@@ -13,7 +13,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        //$this->middleware('auth');
     }
 
     /**
@@ -31,8 +31,13 @@ class HomeController extends Controller
         return view('quienes_somos');
     }
 
-    public function clientes_appsiel()
+    public function clientes()
     {
-        return view('clientes_appsiel');
+        return view('clientes');
+    }
+
+    public function preguntas_frecuentes()
+    {
+        return view('preguntas_frecuentes');
     }
 }
