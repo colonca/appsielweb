@@ -16,10 +16,10 @@
                         <li class="submenu__item"><a class="nav__link" href="{{url('preguntas-frecuentes-appsiel')}}">Preguntas frecuentes</a></li>
                     </ul>
                 </li>
-                <li class="nav__item"><a class="nav__link" href="{{url('clientes-appsiel')}}">Clientes</a></li>
+                <li class="nav__item"><a class="nav__link" href="">Clientes</a></li><!-- { {url('clientes-appsiel')}} -->
                 <li class="nav__item"><a class="nav__link" href="">Precios</a></li>
                 <li class="nav__item"><a class="nav__link" href="">Blog</a></li>
-                <li class="nav__item"><a class="nav__link" href="">Contacto</a></li>
+                <li class="nav__item"><a class="nav__link" href="{{url('home/contactanos')}}">Contacto</a></li>
                 <li class="nav__item"><a class="nav__link activo" href="http://demo.appsiel.com.co/login" target="_blank">DEMO</a></li>
             </ul>
         </nav>
