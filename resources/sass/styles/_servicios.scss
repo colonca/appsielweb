@@ -1,0 +1,30 @@
+.servicios {
+
+   margin-top: 2em;
+
+   .background__grid {
+      background: linear-gradient(to bottom, var(--cian), var(--menta));
+   }
+
+   &__grid {
+      @extend .wraper; 
+      padding: 1.5em 0;   
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+      @media screen and (min-width:768px){
+         grid-template-columns: 1fr 1fr 1fr;
+      }
+
+   }
+
+   &__item {
+       @extend .wraper; 
+       text-align: center;
+       color: var(--black);
+
+       @include item(194px,97px);
+   }
+
+
+}

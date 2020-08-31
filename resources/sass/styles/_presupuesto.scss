@@ -1,0 +1,46 @@
+.presupuesto {
+    
+    background: linear-gradient(to bottom, var(--cian), var(--menta));
+
+    &_content {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-wrap: wrap;
+       padding: 1em;
+
+       .btn {
+         display: inline-block;
+         width: 250px;
+         border: 1px solid var(--black);
+         color: var(--black);
+         padding: 10px;
+         border-radius: 30px;
+         font-weight: bold;
+         text-align: center;
+         cursor: pointer;
+       }
+
+       @media screen and (min-width:768px){
+           flex-wrap: nowrap;
+       }
+
+    }
+
+    &_descripcion{
+        color: var(--black);
+        margin-right: 10px;
+        h2 {
+            text-align: left;
+            font-size: 1.5em;
+            margin-bottom: 0;
+            font-weight: bold;
+        }
+
+        p {
+            margin-top: 10px;
+            font-size: 1em;
+        }
+    }
+
+}

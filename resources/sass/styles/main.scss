@@ -1,0 +1,66 @@
+@import 'utils';
+@import 'header';
+@import 'hero';
+@import 'servicios';
+@import 'productos';
+@import 'why';
+@import 'team';
+@import 'newsletter';
+@import 'presupuesto';
+@import 'footer';
+
+
+:root {
+    --black : #0A0909;
+    --cian :  #3AC4E5;
+    --menta : #11D1A2;
+    --purpura : #6E2AB6;
+    @include scroll(var(--cian));
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+   background-color: var(--black);
+   font-family: 'Assistant', sans-serif;
+   color: white;
+   margin: 0;
+}
+
+h1,h2 {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    @media screen and (min-width:768px) {
+        font-size: 2em;
+    }
+}
+
+
+.wraper {
+
+    width: 90%;
+    margin: 0 auto;
+    
+    @media screen and (min-width:768px) {
+        width: 86%;
+    }
+
+}
+
+.activo {
+    color: white;
+    background-color: var(--menta);
+    font-weight: bold;
+    border: 1px solid var(--menta) !important;
+    border-radius: 2em;
+    padding: 5px 10px;
+
+    &:hover {
+        color: var(--purpura) !important;
+    }
+}

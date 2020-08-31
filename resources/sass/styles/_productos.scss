@@ -1,0 +1,72 @@
+.productos {
+	padding: 1em 0;
+    
+	&__menuwraper {
+		overflow-x: scroll;
+		overflow-y: hidden;
+		padding-bottom: 10px;
+        margin-bottom: 2em;
+		@include scroll(var(--menta));
+		.productos__menu {
+			margin: 0;
+			padding: 0;
+			display: flex;
+			list-style: none;
+
+			.menu__item {
+			   /* spacing styles */
+				-ms-flex-preferred-size: auto;
+				flex-basis: auto; /* sets the initial main size of a each menu item */ 
+				-ms-flex-negative: 0; 
+				flex-shrink: 0; /* don't allow menu item to shrink below 120px when there isn’t enough space on the row. */
+				-webkit-box-flex: 1;
+				-ms-flex-positive: 1;
+				text-align: center;
+				margin: 0 3px;
+				padding: 5px 10px;
+				/* additional styles */
+				border: 1px solid white;
+				border-radius: 2em;
+				cursor: pointer;
+
+                &:hover {
+					color: var(--cian);
+				}
+
+			}
+
+		}
+
+		@media screen and (min-width:768px){
+			overflow-x: hidden;
+			.productos__menu  {
+				justify-content: center;
+			}
+		}
+
+	}
+
+	&__grid {
+		display: none;
+		grid-template-columns: 1fr;
+		grid-gap: 20px;
+
+
+		.productos__item {
+			text-align: center;
+			color: white;
+		    @include item(214px,167px);
+		}
+
+		@media screen and (min-width:768px){
+			grid-template-columns: 1fr 1fr 1fr;
+		 }
+	}
+
+
+	.activo-servicio {
+		display: grid;
+	}
+
+	
+}

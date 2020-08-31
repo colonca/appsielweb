@@ -1,0 +1,124 @@
+#open {
+    display: none;
+}
+
+
+.menu {
+
+    display: none;
+   
+    &-open {
+        width: 1.5em;
+        height: 1.25em;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    &__barra { 
+       width: 100%;
+       height: 4px;
+       background-color: white;
+       border-radius: 20px;
+    }
+
+    ul  {
+
+        list-style: none;
+        margin: 0;
+        padding: 0;
+       
+
+        li {
+            padding: 0 10px;
+            
+            &:hover{
+                & > a {
+                    color: var(--cian);
+                }
+                & > ul{
+                    display: block;
+                }
+            }
+
+            ul {
+               min-width: 250px; 
+               background-color: var(--black);
+               border: 1px solid var(--cian);
+               border-radius: 20px;
+               display: none;
+               position: absolute;
+               z-index: 1000;
+               
+               li {
+                   position: relative;
+                   padding: 10px;
+                   width: 100%;
+                   border-bottom: 1px solid var(--cian);
+
+                   &:last-of-type {
+                    border-bottom:none;
+                   }
+
+                   ul {
+                       top: 10px;
+                       left: 100%;
+                   }
+
+                   a {
+                        i {
+                            margin-bottom: -10px;
+                            transform: rotate(-90deg);
+                        }
+                   }
+
+
+               }
+
+            }
+
+            a {
+                font-weight: bold;
+                text-decoration: none; 
+                color: white;
+                text-transform: uppercase;
+                display: flex; 
+                justify-content: space-between;
+                i {
+                    padding-left: 10px;
+                    color: var(--cian);
+                }
+        
+            }
+
+        }
+
+        
+    }
+
+
+    
+    @media screen and (min-width:768px){
+        display: block;
+
+        &-open {
+            display: none;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+          
+            &__item {  
+                .activo {
+                    background-color: var(--cian);
+                    margin-top: -5px;
+                }
+            }
+
+        }
+    }
+}
+
+

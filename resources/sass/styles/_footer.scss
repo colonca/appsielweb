@@ -1,0 +1,57 @@
+.footer {
+    padding-top: 20px;
+    .copyright {
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+       h3 {
+           font-size: 2em;
+       }
+
+       ul {
+           margin: 0;
+           padding: 0;
+
+           li {
+
+               list-style: none;
+               padding: 5px;
+               
+               a {
+                 text-decoration: none;
+                 color: white;
+                 font-weight: bold;
+               }
+
+           }
+       }
+
+       .redes {
+           display: flex;
+
+           .red {
+               margin-right: 20px;
+               font-size: 1.5em;
+           }
+       }
+
+      .footer__item {
+          flex-basis: 100%;
+      }
+
+      @media screen and (min-width:768px){
+         flex-wrap: nowrap;
+         .footer__item {
+            flex-basis: 33%;
+            margin-right: 20px;
+        }
+      }
+
+    }
+}

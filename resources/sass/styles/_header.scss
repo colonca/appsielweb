@@ -1,0 +1,38 @@
+ @import '_menu.scss';
+
+.header {
+    
+    margin-top: 24px;
+
+    & .wraper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &__logo {
+        width: 95px;
+        height: 40px;
+        object-fit: cover;
+
+        @media screen and (min-width:768px){
+            width: 180px;
+            height: 80px;
+        }
+    }
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-top:0;
+    background-color: var(--black);
+    z-index: 10000;
+
+    &  .header__logo {
+        width: 90px;
+        height: 40px;
+    }
+}
