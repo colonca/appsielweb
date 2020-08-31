@@ -24,6 +24,9 @@ Route::post('newsletter/suscripcion/guardar','NewsletterController@store')->name
 Route::get('landingpage','MenuController@landing');
 Route::post('landingpage','LandingPageController@store')->name('landing.store');
 
+Route::get('quienes-somos-appsiel', 'HomeController@quienes_somos');
+Route::get('clientes-appsiel', 'HomeController@clientes');
+Route::get('preguntas-frecuentes-appsiel', 'HomeController@preguntas_frecuentes');
 
 //GRUPO DE RUTAS PARA SUSCRIBSIÓN
 //Route::group(['middleware' => ['auth'], 'prefix' => 'admin'], function () {
