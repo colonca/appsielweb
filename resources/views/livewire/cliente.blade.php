@@ -1,4 +1,4 @@
-<div>
+<div class="my-8">
     <div class="wraper">
         <h2>Nuestos Clientes</h2>
         <p class="text-center text-sm md:text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi culpa cupiditate deserunt dignissimos dolore earum esse excepturi expedita iure minima nesciunt optio praesentium quae quasi quo sapiente sint suscipit, voluptas?</p>

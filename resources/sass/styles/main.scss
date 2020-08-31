@@ -12,7 +12,7 @@
 
 :root {
     --black : #0A0909;
-    --cian :  #3AC4E5;
+    --cian : #292d3e;
     --menta : #11D1A2;
     --purpura : #6E2AB6;
     @include scroll(var(--cian));
@@ -45,7 +45,7 @@ h1,h2 {
 
     width: 90%;
     margin: 0 auto;
-    
+
     @media screen and (min-width:768px) {
         width: 86%;
     }

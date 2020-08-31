@@ -3,6 +3,67 @@
 @section('styles')
     <link href="{{asset('css/main.css')}}" rel="stylesheet">
     <link href="{{asset('css/splide.min.css')}}" rel="stylesheet">
+    <style>
+
+        .card .card-header {
+            background-color: #fff;
+            -webkit-box-shadow: 0px 0px 15px 0px rgba(52, 69, 199, 0.4);
+            box-shadow: 0px 0px 15px 0px rgba(52, 69, 199, 0.4);
+            border: 0;
+            border-radius: 10px 10px 0 0;
+            padding: 0
+        }
+
+        .card.v-dark .card-header {
+            background-color: #0084ff;
+        }
+
+        .card .card-header.active {
+            border-radius: 10px 10px 0 0
+        }
+
+        ::after, ::before {
+            box-sizing: border-box;
+        }
+
+        .card .card-header.active a,
+        .card .card-header:hover a,
+        .card-body p,
+        .card.v-dark .card-header a {
+           cursor: pointer;
+        }
+
+        .card .card-header a {
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 600;
+            color: #000;
+            display: block;
+            padding: 20px 30px;
+            position: relative
+        }
+
+        .card .card-header a:after {
+            content: '\f078';
+            font-family: 'FontAwesome';
+            position: absolute;
+            right: 30px
+        }
+
+        .card .card-header.active a:after {
+            content: '\f077';
+            font-family: 'FontAwesome'
+        }
+
+        .card-body {
+            padding: 0 30px 10px 30px
+        }
+
+        .card.two .card-body {
+            background-image: linear-gradient(45deg, rgb(157, 91, 254) 0%, rgb(56, 144, 254) 100%);
+
+        }
+    </style>
 @endsection
 
 @section('title')
@@ -81,7 +142,37 @@
         </div>
     </section>
 
-   <livewire:cliente/>
+    <div id="preguntas-frecuentes">
+        <section id="faq-area" class="bg-1">
+            <div class="wraper">
+                <h2>¿Qué es APPSIEL?</h2>
+                <p class="text-center pb-8 md:text-lg">Es un conjunto de herramientas de software en la nube,  que se venden como un <strong>servicio</strong> mensual o anual.</p>
+                <div class="flex flex-wrap md:flex-no-wrap justify-center items-center">
+                    <div class="w-2/4 md:mr-6 ">
+                        <div class="faq-img">
+                            <img src="{{asset('images/question.svg')}}"  class="w-full">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0">
+                                <a class="collapsed">¿Cuanto cuesta?</a>
+                            </h5>
+                        </div>
+                        <div id="collapse1" class="collapse">
+                            <div class="card-body bg-gray-800 rounded-lg rounded-t-none">
+                                <p class="text-white font-semibold">APPSIEL tiene aplicaciones para empresas de distintos sectores; por tanto el costo puede variar ampliamente de un negocio a otro.
+                                    Un pequeño negocio de comercio puede pagar al rededor de $48.000 mensuales. Negocios o empresas más grandes pagarán de acuerdo</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <livewire:cliente/>
 
    <livewire:newsletters />
 
@@ -97,7 +188,6 @@
             </div>
         </div>
     </section>
-
 @endsection
 
 @section('scripts')
