@@ -18,9 +18,9 @@
                 </li>
                 <li class="nav__item"><a class="nav__link" href="">Clientes</a></li><!-- { {url('clientes-appsiel')}} -->
                 <li class="nav__item"><a class="nav__link" href="">Precios</a></li>
-                <li class="nav__item"><a class="nav__link" href="">Blog</a></li>
+                <li class="nav__item"><a class="nav__link" href="{{url('/blog')}}">Blog</a></li>
                 <li class="nav__item"><a class="nav__link" href="{{url('home/contactanos')}}">Contacto</a></li>
-                <li class="nav__item"><a class="nav__link activo" href="http://demo.appsiel.com.co/login" target="_blank">DEMO</a></li>
+                <li class="nav__item"><a class="nav__link -my-1 py-1 px-2 bg-blue-900 rounded-full" href="http://demo.appsiel.com.co/login" target="_blank">DEMO</a></li>
             </ul>
         </nav>
     </div>

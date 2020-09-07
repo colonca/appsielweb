@@ -20,14 +20,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ea7d65-9aae-44db-b00d-9eae227d89fc" name="Default Changelist" comment="'Integración con livewire y formulario de contacto'">
-      <change afterPath="$PROJECT_DIR$/public/images/question.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/preguntas.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/imagen-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/imagen-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/imagen-hero.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/svg/blog.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/svg/undraw_progressive_app_m9ms.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/svg/undraw_tailwind_css_1egw.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/videos/appsiel-hero.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/background_newsletter.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/blog.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Appsielweb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Appsielweb.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/1583859741codelco.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/cache/livewire-components.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/cache/livewire-components.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/cache/packages.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/cache/packages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/cache/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/cache/services.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/splide.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/splide.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/background-newsletter.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/background_newsletter.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/faq-img-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/faq-img-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/question.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/question.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/splide.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/splide.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/styles/_menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/styles/_menu.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/styles/_newsletter.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/styles/_newsletter.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/sass/styles/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/styles/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/cliente.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/cliente.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/preguntas_frecuentes.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/quienes_somos.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/newsletters.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/newsletters.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/productos.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/productos.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,6 +180,7 @@
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
       <path value="$PROJECT_DIR$/vendor/laraveles/spanish" />
       <path value="$PROJECT_DIR$/vendor/livewire/livewire" />
+      <path value="$PROJECT_DIR$/vendor/artesaos/seotools" />
     </include_path>
   </component>
   <component name="ProjectId" id="1g2yNL5kdAdKj5a7ggfSU1AljMG" />
@@ -162,7 +194,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -173,18 +205,18 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/css" />
-      <recent name="$PROJECT_DIR$/public/js" />
-      <recent name="$PROJECT_DIR$/public/images" />
-      <recent name="C:\xampp\htdocs\Appsielweb\public\css" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources" />
+      <recent name="$PROJECT_DIR$/public/svg" />
+      <recent name="$PROJECT_DIR$/resources/views" />
       <recent name="$PROJECT_DIR$/public/images" />
-      <recent name="$PROJECT_DIR$/public/js" />
+      <recent name="$PROJECT_DIR$/public/videos" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/images" />
       <recent name="$PROJECT_DIR$/public/css" />
-      <recent name="$PROJECT_DIR$/resources/sass" />
-      <recent name="$PROJECT_DIR$/storage/app/public" />
+      <recent name="$PROJECT_DIR$/public/js" />
+      <recent name="C:\xampp\htdocs\Appsielweb\public\css" />
     </key>
   </component>
   <component name="RunManager">
@@ -226,7 +258,13 @@
       <workItem from="1598814636882" duration="18236000" />
       <workItem from="1598880384776" duration="599000" />
       <workItem from="1598900711209" duration="8000" />
-      <workItem from="1598900753075" duration="8639000" />
+      <workItem from="1598900753075" duration="10819000" />
+      <workItem from="1598969316172" duration="1505000" />
+      <workItem from="1599246912670" duration="1650000" />
+      <workItem from="1599321256631" duration="7000" />
+      <workItem from="1599323443694" duration="9065000" />
+      <workItem from="1599401560498" duration="17480000" />
+      <workItem from="1599440640588" duration="19513000" />
     </task>
     <task id="LOCAL-00001" summary="'Integración con livewire y formulario de contacto'">
       <created>1598473825800</created>
@@ -279,6 +317,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="'Integración con livewire y formulario de contacto'" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1402" y="153" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599324209961">
+      <screen x="1024" y="0" width="1366" height="768" />
+    </state>
+    <state x="1402" y="153" key="#com.intellij.fileTypes.FileTypeChooser/1024.0.1366.768/2390.0.1366.768/0.0.1024.723@1024.0.1366.768" timestamp="1599324209961" />
     <state x="2811" y="142" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1598026995491">
       <screen x="2390" y="0" width="1366" height="768" />
     </state>
@@ -287,14 +329,14 @@
       <screen x="1024" y="0" width="1366" height="768" />
     </state>
     <state x="1431" y="273" width="541" height="176" key="ComposerInitDialogKey/1024.0.1366.768/2390.0.1366.768/0.0.1024.723@1024.0.1366.768" timestamp="1598288635800" />
-    <state x="2853" y="129" width="424" height="483" key="FileChooserDialogImpl" timestamp="1598843891831">
-      <screen x="2390" y="0" width="1366" height="768" />
+    <state x="1487" y="129" width="424" height="483" key="FileChooserDialogImpl" timestamp="1599321262045">
+      <screen x="1024" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="121" width="424" height="483" key="FileChooserDialogImpl/0.0.1366.723@0.0.1366.723" timestamp="1598478749371" />
     <state x="463" y="154" key="FileChooserDialogImpl/0.30.1366.738@0.30.1366.738" timestamp="1597352309129" />
     <state x="2853" y="129" key="FileChooserDialogImpl/1024.0.1366.768/0.0.1024.723/2390.0.1366.768@2390.0.1366.768" timestamp="1598037743478" />
-    <state x="1487" y="129" key="FileChooserDialogImpl/1024.0.1366.768/2390.0.1366.768/0.0.1024.723@1024.0.1366.768" timestamp="1598318913589" />
-    <state x="2853" y="129" key="FileChooserDialogImpl/1024.0.1366.768/2390.0.1366.768/0.0.1024.723@2390.0.1366.768" timestamp="1598843891831" />
+    <state x="1487" y="129" key="FileChooserDialogImpl/1024.0.1366.768/2390.0.1366.768/0.0.1024.723@1024.0.1366.768" timestamp="1599321262045" />
+    <state x="2853" y="129" key="FileChooserDialogImpl/1024.0.1366.768/2390.0.1366.768/0.0.1024.723@2390.0.1366.768" timestamp="1598974157618" />
     <state x="137" y="58" key="MergeDialog" timestamp="1598476707005">
       <screen x="0" y="0" width="1366" height="723" />
     </state>
@@ -312,24 +354,27 @@
     </state>
     <state x="283" y="94" key="Vcs.Push.Dialog.v2/0.0.1366.723@0.0.1366.723" timestamp="1598477313916" />
     <state x="212" y="94" key="Vcs.Push.Dialog.v2/1024.0.1366.768/2390.0.1366.768/0.0.1024.723@0.0.1024.723" timestamp="1598540316606" />
-    <state x="2390" y="0" width="607" height="768" key="find.popup" timestamp="1597375983693">
-      <screen x="2390" y="0" width="1366" height="768" />
+    <state x="1024" y="0" width="607" height="723" key="find.popup" timestamp="1599336105427">
+      <screen x="1024" y="0" width="1366" height="768" />
     </state>
+    <state x="1024" y="0" width="607" height="723" key="find.popup/1024.0.1366.768/2390.0.1366.768/0.0.1024.723@1024.0.1366.768" timestamp="1599336105427" />
     <state x="2390" y="0" width="607" height="768" key="find.popup/1024.0.1366.768/2390.0.1366.768/0.0.1024.723@2390.0.1366.768" timestamp="1597375983693" />
     <state x="380" y="136" key="git4idea.merge.GitPullDialog" timestamp="1598477307085">
       <screen x="0" y="0" width="1366" height="723" />
     </state>
     <state x="380" y="136" key="git4idea.merge.GitPullDialog/0.0.1366.723@0.0.1366.723" timestamp="1598477307085" />
-    <state x="347" y="159" key="run.anything.popup" timestamp="1597778193659">
-      <screen x="0" y="0" width="1366" height="723" />
+    <state x="1371" y="169" key="run.anything.popup" timestamp="1599452785792">
+      <screen x="1024" y="0" width="1366" height="768" />
     </state>
     <state x="347" y="159" key="run.anything.popup/0.0.1366.723@0.0.1366.723" timestamp="1597778193659" />
+    <state x="1371" y="169" key="run.anything.popup/1024.0.1366.768/2390.0.1366.768/0.0.1024.723@1024.0.1366.768" timestamp="1599452785792" />
     <state x="2737" y="169" key="run.anything.popup/1024.0.1366.768/2390.0.1366.768/0.0.1024.723@2390.0.1366.768" timestamp="1597722023250" />
-    <state x="346" y="56" width="672" height="665" key="search.everywhere.popup" timestamp="1598467963065">
-      <screen x="0" y="0" width="1366" height="723" />
+    <state x="1370" y="14" width="672" height="707" key="search.everywhere.popup" timestamp="1599453579259">
+      <screen x="1024" y="0" width="1366" height="768" />
     </state>
     <state x="346" y="56" width="672" height="665" key="search.everywhere.popup/0.0.1366.723@0.0.1366.723" timestamp="1598467963065" />
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.30.1366.738@0.30.1366.738" timestamp="1597347581937" />
     <state x="2736" y="14" width="672" height="707" key="search.everywhere.popup/1024.0.1366.768/0.0.1024.723/2390.0.1366.768@2390.0.1366.768" timestamp="1598030164326" />
+    <state x="1370" y="14" width="672" height="707" key="search.everywhere.popup/1024.0.1366.768/2390.0.1366.768/0.0.1024.723@1024.0.1366.768" timestamp="1599453579259" />
   </component>
 </project>

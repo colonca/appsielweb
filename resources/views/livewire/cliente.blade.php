@@ -1,5 +1,5 @@
 <div class="my-8">
-    <div class="wraper">
+    <div class="wraper text-gray-400">
         <h2>Nuestos Clientes</h2>
         <p class="text-center text-sm md:text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi culpa cupiditate deserunt dignissimos dolore earum esse excepturi expedita iure minima nesciunt optio praesentium quae quasi quo sapiente sint suscipit, voluptas?</p>
         <div class="splide my-8">

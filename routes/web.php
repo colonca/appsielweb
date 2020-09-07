@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::view('/','index');
 
 
+Route::view('/blog','blog');
+Route::get('blog/{slug}','BlogController@show')->name('blog.post');
+
 Auth::routes();
 
 Route::get('/campaña/Ebook','LandingPageController@documento')->name('camapaña.ebook');

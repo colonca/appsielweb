@@ -1,5 +1,5 @@
 <footer class="footer">
-    <div class="wraper">
+    <div class="wraper text-gray-400">
         <div class="footer__content">
             <div class="footer__item">
                 <img loading="lazy" class="logo" src="{{asset('images/Lg_ 1.png')}}" alt="">

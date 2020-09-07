@@ -642,7 +642,7 @@
 }
 
 .newsletter {
-  background: url(../images/background-newsletter.jpg) center top no-repeat;
+  background: url("/resources/images/background_newsletter.jpg") center top no-repeat;
   -webkit-backdrop-filter: opacity(20%);
           backdrop-filter: opacity(20%);
   background-size: cover;
@@ -824,7 +824,7 @@
 
 :root {
   --black: #0A0909;
-  --cian: #3AC4E5;
+  --cian: #68E1FD;
   --menta: #11D1A2;
   --purpura: #6E2AB6;
 }

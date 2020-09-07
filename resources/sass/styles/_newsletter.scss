@@ -1,6 +1,6 @@
 .newsletter {
 
-    background: url('../images/background-newsletter.jpg') center top  no-repeat; 
+    background: url('/resources/images/background_newsletter.jpg') center top  no-repeat;
     backdrop-filter: opacity(20%);
     background-size: cover;
     background-attachment: fixed;
@@ -57,7 +57,7 @@
            margin-left: -11px;
         }
 
-        @media screen and (min-width:768px){    
+        @media screen and (min-width:768px){
             input {
                 width: 350px;
             }

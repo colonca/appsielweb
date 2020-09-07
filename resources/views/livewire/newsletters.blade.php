@@ -1,6 +1,6 @@
 <section class="newsletter">
     <div class="wraper">
-        <div class="newsletter__content">
+        <div class="newsletter__content text-gray-400">
             <h2 class="newsletter__title">Boletín semanal</h2>
             <p class="text-center md:text-lg ">Suscribete a nuestro newsletter semanal y te haremos llegar la mejor información para impulsar el crecimiento de tu negocio. Además de promociones, descuentos, productos y todo el contenido de tecnología que nuestro maravilloso equipo prepara cada semana.</p>
             <form id="formulario" method="post" wire:submit.prevent="sendEmail">

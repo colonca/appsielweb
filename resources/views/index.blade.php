@@ -3,67 +3,7 @@
 @section('styles')
     <link href="{{asset('css/main.css')}}" rel="stylesheet">
     <link href="{{asset('css/splide.min.css')}}" rel="stylesheet">
-    <style>
-
-        .card .card-header {
-            background-color: #fff;
-            -webkit-box-shadow: 0px 0px 15px 0px rgba(52, 69, 199, 0.4);
-            box-shadow: 0px 0px 15px 0px rgba(52, 69, 199, 0.4);
-            border: 0;
-            border-radius: 10px 10px 0 0;
-            padding: 0
-        }
-
-        .card.v-dark .card-header {
-            background-color: #0084ff;
-        }
-
-        .card .card-header.active {
-            border-radius: 10px 10px 0 0
-        }
-
-        ::after, ::before {
-            box-sizing: border-box;
-        }
-
-        .card .card-header.active a,
-        .card .card-header:hover a,
-        .card-body p,
-        .card.v-dark .card-header a {
-           cursor: pointer;
-        }
-
-        .card .card-header a {
-            font-size: 18px;
-            line-height: 28px;
-            font-weight: 600;
-            color: #000;
-            display: block;
-            padding: 20px 30px;
-            position: relative
-        }
-
-        .card .card-header a:after {
-            content: '\f078';
-            font-family: 'FontAwesome';
-            position: absolute;
-            right: 30px
-        }
-
-        .card .card-header.active a:after {
-            content: '\f077';
-            font-family: 'FontAwesome'
-        }
-
-        .card-body {
-            padding: 0 30px 10px 30px
-        }
-
-        .card.two .card-body {
-            background-image: linear-gradient(45deg, rgb(157, 91, 254) 0%, rgb(56, 144, 254) 100%);
-
-        }
-    </style>
+    <link rel="stylesheet" href="{{asset('css/preguntas.css')}}">
 @endsection
 
 @section('title')
@@ -72,20 +12,23 @@
 
 @section('content')
     <section class="hero">
-        <div class="wraper">
-            <img loading="lazy" class="hero__background" src="./svg/background.svg" alt="">
-            <div class="hero__content">
-                <div class="hero__description">
-                    <h1 class="hero__title">Sistemas para el crecimiento empresarial</h1>
-                    <p class="hero__text">Somos una empresa dedicada al desarrollo de sistemas de información que aumenten la productividad de nuestros clientes.</p>
-                </div>
-                <img loading="lazy" class="hero__ilustracion" src="{{asset('svg/ilustracion.svg')}}" alt="">
-            </div>
+            <div class="wraper mx-auto flex justify-between items-center py-6">
+                 <div class="text-2xl md:text-4xl w-3/5 ">
+                     <div class="text-gray-400 font-bold text-left">Sistemas para el crecimiento empresarial</div>
+                     <div class="text-sm md:text-2xl text-left text-gray-400">Somos una empresa dedicada al desarrollo de sistemas de información que aumenten la productividad de nuestros clientes.</div>
+                     <div class="text-left pt-4 pb-2">
+                         <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+                     </div>
+                 </div>
+                 <div class="w-2/5 flex-1">
+                     <img src="{{asset('images/imagen-2.png')}}" alt="ilustración">
+                 </div>
         </div>
     </section>
-    <main  class="servicios">
+
+    <main  class="servicios mb-12">
         <div class="wraper">
-            <h2>Servicios de software en la nube</h2>
+            <h2 class="text-gray-400 py-6">Servicios de software en la nube</h2>
         </div>
         <div class="background__grid">
             <div class="servicios__grid">
@@ -122,18 +65,20 @@
             </div>
         </div>
     </main>
+
     <livewire:productos />
-    <section class="why">
+
+    <section class="why my-16">
         <div class="wraper">
             <div class="why__content">
-                <h2 class="why__title">¿Por Qué Elegirnos?</h2>
+                <h2 class="why__title text-gray-400">¿Por Qué Elegirnos?</h2>
                 <ul class="why__caracteristicas">
-                    <li><i class="fas fa-code"></i>Software en la nube. No requiere licencias.</li>
-                    <li><i class="fas fa-code"></i>Software e infraestructura como servicio. No debe comprar equipos especializados.</li>
-                    <li><i class="fas fa-code"></i>Módulos totalmente parametrizables y ajustables a las necesidades de cada negocio. Usted elige lo que realmente necesite.</li>
-                    <li><i class="fas fa-code"></i>No manejamos paquetes, solo aplicaciones individuales.</li>
-                    <li><i class="fas fa-code"></i>Su negocio tendrá <strong> +Conocimientos</strong>, <strong>+Experiencia</strong>, <strong>+Habilidades</strong> y el respaldo de un equipo de profesionales a su servicio.</li>
-                    <li><i class="fas fa-code"></i>Precios increíbles.</li>
+                    <li class="text-gray-400"><i class="fas fa-code"></i>Software en la nube. No requiere licencias.</li>
+                    <li class="text-gray-400"><i class="fas fa-code"></i>Software e infraestructura como servicio. No debe comprar equipos especializados.</li>
+                    <li class="text-gray-400"><i class="fas fa-code"></i>Módulos totalmente parametrizables y ajustables a las necesidades de cada negocio. Usted elige lo que realmente necesite.</li>
+                    <li class="text-gray-400"><i class="fas fa-code"></i>No manejamos paquetes, solo aplicaciones individuales.</li>
+                    <li class="text-gray-400"><i class="fas fa-code"></i>Su negocio tendrá <strong> +Conocimientos</strong>, <strong>+Experiencia</strong>, <strong>+Habilidades</strong> y el respaldo de un equipo de profesionales a su servicio.</li>
+                    <li class="text-gray-400"><i class="fas fa-code"></i>Precios increíbles.</li>
                 </ul>
                 <div class="why__video">
                     <video loading="lazy" src="{{asset('videos/video_presentacion_appsiel_voz_selmary.mp4')}}" preload="none" playsinline controls muted loop poster="./images/appsiel-poster.jpg" autoplay></video>
@@ -145,8 +90,8 @@
     <div id="preguntas-frecuentes">
         <section id="faq-area" class="bg-1">
             <div class="wraper">
-                <h2>¿Qué es APPSIEL?</h2>
-                <p class="text-center pb-8 md:text-lg">Es un conjunto de herramientas de software en la nube,  que se venden como un <strong>servicio</strong> mensual o anual.</p>
+                <h2 class="text-gray-400">¿Qué es APPSIEL?</h2>
+                <p class="text-center pb-8 md:text-lg text-gray-400">Es un conjunto de herramientas de software en la nube,  que se venden como un <strong>servicio</strong> mensual o anual.</p>
                 <div class="flex flex-wrap md:flex-no-wrap justify-center items-center">
                     <div class="w-2/4 md:mr-6 ">
                         <div class="faq-img">
@@ -161,16 +106,20 @@
                         </div>
                         <div id="collapse1" class="collapse">
                             <div class="card-body bg-gray-800 rounded-lg rounded-t-none">
-                                <p class="text-white font-semibold">APPSIEL tiene aplicaciones para empresas de distintos sectores; por tanto el costo puede variar ampliamente de un negocio a otro.
+                                <p class="text-sm md:text-md text-gray-400 font-semibold">APPSIEL tiene aplicaciones para empresas de distintos sectores; por tanto el costo puede variar ampliamente de un negocio a otro.
                                     Un pequeño negocio de comercio puede pagar al rededor de $48.000 mensuales. Negocios o empresas más grandes pagarán de acuerdo</p>
                             </div>
                         </div>
                     </div>
-
+                </div>
+                <div class="flex justify-end pt-6">
+                    <a href="" class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Preguntas más frecuentes</a>
                 </div>
             </div>
         </section>
     </div>
+
+    <livewire:noticias/>
 
     <livewire:cliente/>
 
@@ -188,6 +137,7 @@
             </div>
         </div>
     </section>
+
 @endsection
 
 @section('scripts')

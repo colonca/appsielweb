@@ -23,19 +23,20 @@
     19 => 'Illuminate\\Translation\\TranslationServiceProvider',
     20 => 'Illuminate\\Validation\\ValidationServiceProvider',
     21 => 'Illuminate\\View\\ViewServiceProvider',
-    22 => 'Facade\\Ignition\\IgnitionServiceProvider',
-    23 => 'Fideloper\\Proxy\\TrustedProxyServiceProvider',
-    24 => 'Fruitcake\\Cors\\CorsServiceProvider',
-    25 => 'Laravel\\Tinker\\TinkerServiceProvider',
-    26 => 'Laravel\\Ui\\UiServiceProvider',
-    27 => 'Laraveles\\Spanish\\SpanishServiceProvider',
-    28 => 'Livewire\\LivewireServiceProvider',
-    29 => 'Carbon\\Laravel\\ServiceProvider',
-    30 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
-    31 => 'App\\Providers\\AppServiceProvider',
-    32 => 'App\\Providers\\AuthServiceProvider',
-    33 => 'App\\Providers\\EventServiceProvider',
-    34 => 'App\\Providers\\RouteServiceProvider',
+    22 => 'Artesaos\\SEOTools\\Providers\\SEOToolsServiceProvider',
+    23 => 'Facade\\Ignition\\IgnitionServiceProvider',
+    24 => 'Fideloper\\Proxy\\TrustedProxyServiceProvider',
+    25 => 'Fruitcake\\Cors\\CorsServiceProvider',
+    26 => 'Laravel\\Tinker\\TinkerServiceProvider',
+    27 => 'Laravel\\Ui\\UiServiceProvider',
+    28 => 'Laraveles\\Spanish\\SpanishServiceProvider',
+    29 => 'Livewire\\LivewireServiceProvider',
+    30 => 'Carbon\\Laravel\\ServiceProvider',
+    31 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
+    32 => 'App\\Providers\\AppServiceProvider',
+    33 => 'App\\Providers\\AuthServiceProvider',
+    34 => 'App\\Providers\\EventServiceProvider',
+    35 => 'App\\Providers\\RouteServiceProvider',
   ),
   'eager' => 
   array (
@@ -169,6 +170,18 @@
     'translation.loader' => 'Illuminate\\Translation\\TranslationServiceProvider',
     'validator' => 'Illuminate\\Validation\\ValidationServiceProvider',
     'validation.presence' => 'Illuminate\\Validation\\ValidationServiceProvider',
+    'Artesaos\\SEOTools\\Contracts\\SEOTools' => 'Artesaos\\SEOTools\\Providers\\SEOToolsServiceProvider',
+    'Artesaos\\SEOTools\\Contracts\\MetaTags' => 'Artesaos\\SEOTools\\Providers\\SEOToolsServiceProvider',
+    'Artesaos\\SEOTools\\Contracts\\TwitterCards' => 'Artesaos\\SEOTools\\Providers\\SEOToolsServiceProvider',
+    'Artesaos\\SEOTools\\Contracts\\OpenGraph' => 'Artesaos\\SEOTools\\Providers\\SEOToolsServiceProvider',
+    'Artesaos\\SEOTools\\Contracts\\JsonLd' => 'Artesaos\\SEOTools\\Providers\\SEOToolsServiceProvider',
+    'Artesaos\\SEOTools\\Contracts\\JsonLdMulti' => 'Artesaos\\SEOTools\\Providers\\SEOToolsServiceProvider',
+    'seotools' => 'Artesaos\\SEOTools\\Providers\\SEOToolsServiceProvider',
+    'seotools.metatags' => 'Artesaos\\SEOTools\\Providers\\SEOToolsServiceProvider',
+    'seotools.opengraph' => 'Artesaos\\SEOTools\\Providers\\SEOToolsServiceProvider',
+    'seotools.twitter' => 'Artesaos\\SEOTools\\Providers\\SEOToolsServiceProvider',
+    'seotools.json-ld' => 'Artesaos\\SEOTools\\Providers\\SEOToolsServiceProvider',
+    'seotools.json-ld-multi' => 'Artesaos\\SEOTools\\Providers\\SEOToolsServiceProvider',
     'command.tinker' => 'Laravel\\Tinker\\TinkerServiceProvider',
   ),
   'when' => 
@@ -207,6 +220,9 @@
     array (
     ),
     'Illuminate\\Validation\\ValidationServiceProvider' => 
+    array (
+    ),
+    'Artesaos\\SEOTools\\Providers\\SEOToolsServiceProvider' => 
     array (
     ),
     'Laravel\\Tinker\\TinkerServiceProvider' => 
