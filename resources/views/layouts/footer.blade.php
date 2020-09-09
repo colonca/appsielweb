@@ -1,4 +1,16 @@
 <footer class="footer">
+    <!-- @ include('dream_team') -->
+    <section class="presupuesto">
+        <div class="wraper">
+            <div class="presupuesto_content">
+                <div class="presupuesto_descripcion">
+                    <h2>¿Te gustaría aumentar la productividad en tu negocio?</h2>
+                    <p>Contactanos y te daremos asesoría personalizada. Escogiendo las mejores herramientas según tu necesidad.</p>
+                </div>
+                <a class="btn" href="{{url('/contactUs')}}">¡Si me gustaría!</a>
+            </div>
+        </div>
+    </section>
     <div class="wraper text-gray-400">
         <div class="footer__content">
             <div class="footer__item">

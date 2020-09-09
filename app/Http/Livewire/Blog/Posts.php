@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Http\Livewire\Blog;
 
 use App\Post;
 use Livewire\Component;
@@ -13,7 +13,7 @@ class Posts extends Component
 
     public function render()
     {
-        return view('livewire.posts',[
+        return view('livewire.blog.posts',[
             'posts' => Post::paginate(10),
         ]);
     }

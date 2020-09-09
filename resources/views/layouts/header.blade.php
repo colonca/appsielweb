@@ -10,13 +10,8 @@
         <nav class="menu">
             <ul class="nav">
                 <li class="nav__item">
-                    <a class="nav__link" href="">Nosotros<i class="fas fa-sort-down"></i></a>
-                    <ul class="nav__submenu">
-                        <li class="submenu__item"><a class="nav__link" href="{{url('quienes-somos-appsiel')}}">Quíenes somos</a></li>
-                        <li class="submenu__item"><a class="nav__link" href="{{url('preguntas-frecuentes-appsiel')}}">Preguntas frecuentes</a></li>
-                    </ul>
+                    <a class="nav__link" href="{{url('/aboutUs')}}">Quiénes Somos</a>
                 </li>
-                <li class="nav__item"><a class="nav__link" href="">Clientes</a></li><!-- { {url('clientes-appsiel')}} -->
                 <li class="nav__item"><a class="nav__link" href="">Precios</a></li>
                 <li class="nav__item"><a class="nav__link" href="{{url('/blog')}}">Blog</a></li>
                 <li class="nav__item"><a class="nav__link" href="{{url('home/contactanos')}}">Contacto</a></li>

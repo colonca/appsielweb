@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Http\Livewire\Blog;
 
 use App\Post;
 use Livewire\Component;
@@ -17,7 +17,7 @@ class SearchDropdown extends Component
             $searchResult = Post::where('name','like',"%$this->search%")->get()->take(7);
         }
 
-        return view('livewire.search-dropdown',[
+        return view('livewire.blog.search-dropdown',[
             'searchResult' => collect($searchResult),
         ]);
     }

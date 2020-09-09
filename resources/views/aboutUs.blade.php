@@ -1,3 +1,16 @@
+@extends('layouts.app')
+
+@section('title')
+    Quiénes Somos - Appsiel
+@endsection
+
+@section('styles')
+    <link rel="stylesheet" href="{{asset('css/main.css')}}">
+@endsection
+
+@section('content')
+
+    @include('layouts.campaing')
 
     <section class="our__team">
         <div class="wraper">
@@ -37,3 +50,7 @@
             </div>
         </div>
     </section>
+
+@endsection
+
+
