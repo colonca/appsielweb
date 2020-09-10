@@ -25,4 +25,7 @@
         </div>
     </div>
 
+    <livewire:blog.comments :post="$post">
+
+
 @endsection

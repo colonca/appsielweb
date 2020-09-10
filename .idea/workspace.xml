@@ -20,28 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ea7d65-9aae-44db-b00d-9eae227d89fc" name="Default Changelist" comment="'Integración con livewire y formulario de contacto'">
-      <change afterPath="$PROJECT_DIR$/resources/views/aboutUs.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/campaing.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/campaings/ebookCincoEstrategias.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Noticias.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Blog/Noticias.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Posts.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Blog/Posts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SearchDropdown.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Blog/SearchDropdown.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Blog/Comments.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Blog/Comments.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bootstrap/cache/livewire-components.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/cache/livewire-components.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/blog.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/seotools.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/seotools.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/blog/post.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/post.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/contacto.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/contactUs.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dream_team.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/landing.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/campaigns/ebookLandingPage.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/noticias.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/blog/noticias.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/posts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/blog/posts.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/search-dropdown.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/blog/search-dropdown.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/blog/comments.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/blog/comments.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -251,6 +235,8 @@
       <workItem from="1599440640588" duration="19856000" />
       <workItem from="1599486108106" duration="11876000" />
       <workItem from="1599605798515" duration="6870000" />
+      <workItem from="1599656206577" duration="8872000" />
+      <workItem from="1599740007707" duration="10750000" />
     </task>
     <task id="LOCAL-00001" summary="'Integración con livewire y formulario de contacto'">
       <created>1598473825800</created>
@@ -357,18 +343,18 @@
       <screen x="0" y="0" width="1366" height="723" />
     </state>
     <state x="380" y="136" key="git4idea.merge.GitPullDialog/0.0.1366.723@0.0.1366.723" timestamp="1598477307085" />
-    <state x="1371" y="169" key="run.anything.popup" timestamp="1599452785792">
+    <state x="1371" y="169" key="run.anything.popup" timestamp="1599663506909">
       <screen x="1024" y="0" width="1366" height="768" />
     </state>
     <state x="347" y="159" key="run.anything.popup/0.0.1366.723@0.0.1366.723" timestamp="1597778193659" />
-    <state x="1371" y="169" key="run.anything.popup/1024.0.1366.768/2390.0.1366.768/0.0.1024.723@1024.0.1366.768" timestamp="1599452785792" />
+    <state x="1371" y="169" key="run.anything.popup/1024.0.1366.768/2390.0.1366.768/0.0.1024.723@1024.0.1366.768" timestamp="1599663506909" />
     <state x="2737" y="169" key="run.anything.popup/1024.0.1366.768/2390.0.1366.768/0.0.1024.723@2390.0.1366.768" timestamp="1597722023250" />
-    <state x="1370" y="14" width="672" height="707" key="search.everywhere.popup" timestamp="1599453579259">
+    <state x="1370" y="14" width="672" height="707" key="search.everywhere.popup" timestamp="1599664126390">
       <screen x="1024" y="0" width="1366" height="768" />
     </state>
     <state x="346" y="56" width="672" height="665" key="search.everywhere.popup/0.0.1366.723@0.0.1366.723" timestamp="1598467963065" />
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.30.1366.738@0.30.1366.738" timestamp="1597347581937" />
     <state x="2736" y="14" width="672" height="707" key="search.everywhere.popup/1024.0.1366.768/0.0.1024.723/2390.0.1366.768@2390.0.1366.768" timestamp="1598030164326" />
-    <state x="1370" y="14" width="672" height="707" key="search.everywhere.popup/1024.0.1366.768/2390.0.1366.768/0.0.1024.723@1024.0.1366.768" timestamp="1599453579259" />
+    <state x="1370" y="14" width="672" height="707" key="search.everywhere.popup/1024.0.1366.768/2390.0.1366.768/0.0.1024.723@1024.0.1366.768" timestamp="1599664126390" />
   </component>
 </project>

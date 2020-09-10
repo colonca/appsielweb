@@ -1,4 +1,5 @@
 <?php return array (
+  'blog.comment' => 'App\\Http\\Livewire\\Blog\\Comment',
   'blog.comments' => 'App\\Http\\Livewire\\Blog\\Comments',
   'blog.noticias' => 'App\\Http\\Livewire\\Blog\\Noticias',
   'blog.posts' => 'App\\Http\\Livewire\\Blog\\Posts',
