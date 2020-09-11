@@ -13,12 +13,12 @@ class CreateCommnetTable extends Migration
      */
     public function up()
     {
-        Schema::create('commnets', function (Blueprint $table) {
+        Schema::create('comments', function (Blueprint $table) {
             $table->id();
             $table->string('name');
             $table->string('email');
             $table->mediumText('body');
-            $table->bigInteger('commnet_id')->unsigned();
+            $table->bigInteger('comment_id')->unsigned();
             $table->foreignId('post_id');
             $table->foreign('post_id')->references('id')->on('posts')->onDelete('CASCADE');
             $table->timestamps();
