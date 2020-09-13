@@ -20,11 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ea7d65-9aae-44db-b00d-9eae227d89fc" name="Default Changelist" comment="'Integración con livewire y formulario de contacto'">
+      <change afterPath="$PROJECT_DIR$/app/Comment.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Blog/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Blog/Comment.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Blog/Comments.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Blog/Comments.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/cache/livewire-components.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/cache/livewire-components.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Post.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/seotools.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/seotools.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/blog/post.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/post.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_10_173502_create_commnet_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_10_173502_create_commnet_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/blog/comment.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/blog/comment.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/blog/comments.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/blog/comments.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -161,7 +164,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PEBI/app/Http/Controllers/RemisionController.php" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -236,7 +239,8 @@
       <workItem from="1599486108106" duration="11876000" />
       <workItem from="1599605798515" duration="6870000" />
       <workItem from="1599656206577" duration="8872000" />
-      <workItem from="1599740007707" duration="10750000" />
+      <workItem from="1599740007707" duration="21536000" />
+      <workItem from="1599833298263" duration="632000" />
     </task>
     <task id="LOCAL-00001" summary="'Integración con livewire y formulario de contacto'">
       <created>1598473825800</created>
@@ -293,6 +297,10 @@
       <screen x="1024" y="0" width="1366" height="768" />
     </state>
     <state x="1402" y="153" key="#com.intellij.fileTypes.FileTypeChooser/1024.0.1366.768/2390.0.1366.768/0.0.1024.723@1024.0.1366.768" timestamp="1599324209961" />
+    <state x="2696" y="83" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1599770901497">
+      <screen x="2390" y="0" width="1366" height="768" />
+    </state>
+    <state x="2696" y="83" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1024.0.1366.768/2390.0.1366.768/0.0.1024.723@2390.0.1366.768" timestamp="1599770901497" />
     <state x="2811" y="142" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1598026995491">
       <screen x="2390" y="0" width="1366" height="768" />
     </state>
@@ -301,14 +309,14 @@
       <screen x="1024" y="0" width="1366" height="768" />
     </state>
     <state x="1431" y="273" width="541" height="176" key="ComposerInitDialogKey/1024.0.1366.768/2390.0.1366.768/0.0.1024.723@1024.0.1366.768" timestamp="1598288635800" />
-    <state x="1487" y="129" width="424" height="483" key="FileChooserDialogImpl" timestamp="1599321262045">
-      <screen x="1024" y="0" width="1366" height="768" />
+    <state x="2853" y="129" width="424" height="483" key="FileChooserDialogImpl" timestamp="1599771874244">
+      <screen x="2390" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="121" width="424" height="483" key="FileChooserDialogImpl/0.0.1366.723@0.0.1366.723" timestamp="1598478749371" />
     <state x="463" y="154" key="FileChooserDialogImpl/0.30.1366.738@0.30.1366.738" timestamp="1597352309129" />
     <state x="2853" y="129" key="FileChooserDialogImpl/1024.0.1366.768/0.0.1024.723/2390.0.1366.768@2390.0.1366.768" timestamp="1598037743478" />
     <state x="1487" y="129" key="FileChooserDialogImpl/1024.0.1366.768/2390.0.1366.768/0.0.1024.723@1024.0.1366.768" timestamp="1599321262045" />
-    <state x="2853" y="129" key="FileChooserDialogImpl/1024.0.1366.768/2390.0.1366.768/0.0.1024.723@2390.0.1366.768" timestamp="1598974157618" />
+    <state x="2853" y="129" key="FileChooserDialogImpl/1024.0.1366.768/2390.0.1366.768/0.0.1024.723@2390.0.1366.768" timestamp="1599771874244" />
     <state x="137" y="58" key="MergeDialog" timestamp="1598476707005">
       <screen x="0" y="0" width="1366" height="723" />
     </state>
@@ -349,12 +357,13 @@
     <state x="347" y="159" key="run.anything.popup/0.0.1366.723@0.0.1366.723" timestamp="1597778193659" />
     <state x="1371" y="169" key="run.anything.popup/1024.0.1366.768/2390.0.1366.768/0.0.1024.723@1024.0.1366.768" timestamp="1599663506909" />
     <state x="2737" y="169" key="run.anything.popup/1024.0.1366.768/2390.0.1366.768/0.0.1024.723@2390.0.1366.768" timestamp="1597722023250" />
-    <state x="1370" y="14" width="672" height="707" key="search.everywhere.popup" timestamp="1599664126390">
-      <screen x="1024" y="0" width="1366" height="768" />
+    <state x="2736" y="14" width="672" height="707" key="search.everywhere.popup" timestamp="1599771679009">
+      <screen x="2390" y="0" width="1366" height="768" />
     </state>
     <state x="346" y="56" width="672" height="665" key="search.everywhere.popup/0.0.1366.723@0.0.1366.723" timestamp="1598467963065" />
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.30.1366.738@0.30.1366.738" timestamp="1597347581937" />
     <state x="2736" y="14" width="672" height="707" key="search.everywhere.popup/1024.0.1366.768/0.0.1024.723/2390.0.1366.768@2390.0.1366.768" timestamp="1598030164326" />
     <state x="1370" y="14" width="672" height="707" key="search.everywhere.popup/1024.0.1366.768/2390.0.1366.768/0.0.1024.723@1024.0.1366.768" timestamp="1599664126390" />
+    <state x="2736" y="14" width="672" height="707" key="search.everywhere.popup/1024.0.1366.768/2390.0.1366.768/0.0.1024.723@2390.0.1366.768" timestamp="1599771679009" />
   </component>
 </project>
