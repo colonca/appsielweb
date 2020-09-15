@@ -58,8 +58,8 @@ return [
          * The default configurations to be used by the json-ld generator.
          */
         'defaults' => [
-            'title'       => 'Over 9000 Thousand!', // set false to total remove
-            'description' => 'For those who helped create the Genki Dama', // set false to total remove
+            'title'       => 'Appsiel - Sistemas para el crecimiento empresarial', // set false to total remove
+            'description' => 'Somos una empresa dedicada al desarrollo de sistemas de información que aumenten la productividad de nuestros clientes.', // set false to total remove
             'url'         => false, // Set null for using Url::current(), set false to total remove
             'type'        => 'WebPage',
             'images'      => [],

@@ -14,11 +14,11 @@ class SearchDropdown extends Component
         $searchResult = [];
 
         if(strlen($this->search) >= 2){
-            $searchResult = Post::where('name','like',"%$this->search%")->get()->take(7);
+            $searchResult = Post::where('name','like',"%$this->search%")->get();
         }
 
         return view('livewire.blog.search-dropdown',[
-            'searchResult' => collect($searchResult),
+            'searchResult' => collect($searchResult)->take(7),
         ]);
     }
 }

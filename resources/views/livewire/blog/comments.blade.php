@@ -2,8 +2,7 @@
     <livewire:blog.comment :post="$post" message="Deja una respuesta"/>
     @foreach($comments as $comment)
         <div class="w-full md:w-8/12 mx-auto flex my-4">
-            @php($random = rand(0,4))
-            <img src="{{asset("svg/patterns/random-$random.svg")}}" alt="patterns" class="w-16 h-16 object-cover" style="color:#68E1FD">
+            <img src="{{asset('')}}" alt="patterns" class="w-16 h-16 object-cover" style="color:#68E1FD">
             <div class="ml-1 flex-1">
                 <div class="flex items-center flex-wrap">
                     <div class="text-sm md:text-lg font-semibold text-gray-400 ml-2">{{$comment->name}}</div>

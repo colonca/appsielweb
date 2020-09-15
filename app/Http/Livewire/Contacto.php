@@ -30,24 +30,20 @@ class Contacto extends Component
     }
 
     public function guardar(){
-
         $this->validate([
             'nombre' => 'required',
             'telefono' => 'required|numeric',
             'email' => 'required|email',
             'consulta' => 'required',
         ]);
-
         Mail::to($this->email)->send(new \App\Mail\Cotización($this->nombre,$this->consulta));
         Mail::to('contacto@appsiel.com.co')->send(new \App\Mail\RecepcionCotizacion($this->nombre,$this->consulta,$this->presupuesto));
-
         $this->nombre = '';
         $this->email = '';
         $this->telefono = '';
         $this->presupuesto = '';
         $this->consulta = '';
         $this->enviado = true;
-
     }
 
 }
