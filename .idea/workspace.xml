@@ -21,11 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="40ea7d65-9aae-44db-b00d-9eae227d89fc" name="Default Changelist" comment="'Integración con livewire y formulario de contacto'">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Comment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Blog/SearchDropdown.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Blog/SearchDropdown.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Contacto.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Contacto.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/seotools.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/seotools.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/blog/comments.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/blog/comments.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/livewire.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/livewire.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,7 +236,7 @@
       <workItem from="1599833298263" duration="3015000" />
       <workItem from="1600027932124" duration="2304000" />
       <workItem from="1600135926204" duration="2393000" />
-      <workItem from="1600185615339" duration="142000" />
+      <workItem from="1600185615339" duration="458000" />
     </task>
     <task id="LOCAL-00001" summary="'Integración con livewire y formulario de contacto'">
       <created>1598473825800</created>
