@@ -1,40 +1,30 @@
 <div>
-    <section class="our__team py-8">
-        <div class="wraper">
-            <div class="our__team__content">
-                <h2 class="our__team__title text-gray-400">Nuestro Equipo</h2>
-                <blockquote class="person">
-                    <img class="person__img" src="./images/jonny.jpg" alt="Camilo Andres Colon Cañizares">
-                    <div class="person__descripcion">
-                        <h3 class="person__nombre text-gray-400">Camilo Andres Colon Cañizares</h3>
-                        <p class="person__profesion">fullstack</p>
-                        <cite class="text-gray-400">“vive aprendiendo la vida nunca para de enseñar ”</cite>
-                    </div>
-                </blockquote>
-                <div class="peoples">
-                    <div class="worker">
-                        <img class="worker__img" src="./images/Selmary.jpg" alt="Selmary Medina Pérez">
-                        <div class="worker__descripcion">
-                            <h3 class="worker__nombre">Selmary Medina Pérez</h3>
-                            <p class="worker__profesion">Community Manager</p>
+    @if($team->count()> 0)
+        <section class="our__team py-8">
+            <div class="wraper">
+                <div class="our__team__content">
+                    <h2 class="our__team__title text-gray-400">Nuestro Equipo</h2>
+                    <blockquote class="person">
+                        <img loading="lazy" class="person__img" src="{{asset($current->photo)}}" alt="{{$current->name}}">
+                        <div class="person__descripcion">
+                            <h3 class="person__nombre text-gray-400">{{$current->name}}</h3>
+                            <p class="person__profesion">{{$current->profession}}</p>
+                            <cite class="text-gray-400">“{{$current->phrase}}”</cite>
                         </div>
-                    </div>
-                    <div class="worker">
-                        <img class="worker__img" src="./images/jonny.jpg" alt="Camilo Andres Colon Cañizares">
-                        <div class="worker__descripcion">
-                            <h3 class="worker__nombre">Camilo Andres Colon Cañizares</h3>
-                            <p class="worker__profesion">fullstack</p>
-                        </div>
-                    </div>
-                    <div class="worker">
-                        <img class="worker__img" src="./images/jordan.jpg" alt="Jordan Jhonsson Cuadro Negrete">
-                        <div class="worker__descripcion">
-                            <h3 class="worker__nombre">Jordan Jhonsson Cuadro Negrete</h3>
-                            <p class="worker__profesion">Backend</p>
-                        </div>
+                    </blockquote>
+                    <div class="peoples">
+                        @foreach($team as $person)
+                            <div class="worker">
+                                <img loading="lazy" class="worker__img" src="{{$person->photo}}" alt="{{$person->name}}">
+                                <div class="worker__descripcion">
+                                    <h3 class="worker__nombre">{{$person->name}}</h3>
+                                    <p class="worker__profesion">{{$person->profession}}</p>
+                                </div>
+                            </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    @endif
 </div>

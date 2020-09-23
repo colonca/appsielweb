@@ -1,11 +1,4 @@
 <div>
-    <div class="col-md-12">
-        @if(session()->has('success'))
-            <div class="alert alert-success">
-                {!! session('success') !!}
-            </div>
-        @endif
-    </div>
     <div class="card">
         <div class="card-header">
             <div class="card-header-left">
@@ -26,20 +19,20 @@
             <div class="col-md-12">
                 <form class="form-horizontal" wire:submit.prevent="save">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <div class="form-group">
                                 <label><strong>Nombre</strong></label>
                                 <input wire:model.lazy="name" type="text" class="form-control form-control-round" placeholder="Escriba el nombre de la categoría" required>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <div class="form-group">
                                 <label><strong>Descripción</strong></label>
                                 <input wire:model.lazy="description" type="text" class="form-control form-control-round" placeholder="Descripción de la categoría" required>
                             </div>
                         </div>
                     </div>
-                    <div class="form-group d-flex justify-content-end">
+                    <div class="form-group d-flex justify-content-center">
                         <button wire:click="limpiar" class="btn btn-round btn-grd-info m-r-15"><i class="icofont icofont-check-circled"></i>Limpiar</button>
                         <button type="submit" class="btn btn-round btn-grd-success"><i class="icofont icofont-check-circled"></i>Guardar</button>
                     </div>

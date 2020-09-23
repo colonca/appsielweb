@@ -2,7 +2,7 @@
 
 namespace App\Http\Livewire\Backoffice\Categories;
 
-use App\Category;
+use App\Models\Category;
 use Livewire\Component;
 use Livewire\WithPagination;
 
