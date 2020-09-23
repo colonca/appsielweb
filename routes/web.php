@@ -29,6 +29,7 @@ Route::post('landingpage','LandingPageController@store')->name('landing.store');
 //GRUPO DE RUTAS PARA EL MODULO BLOG
 Route::group(['middleware' => 'auth', 'prefix' => 'backoffice/blog'], function () {
     Route::resource('categories','CategoryController');
+    Route::resource('post','PostController');
 });
 
 
