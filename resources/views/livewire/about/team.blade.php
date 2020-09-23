@@ -13,27 +13,15 @@
                         </div>
                     </blockquote>
                     <div class="peoples">
-                        <div class="worker">
-                            <img class="worker__img" src="./images/Selmary.jpg" alt="Selmary Medina Pérez">
-                            <div class="worker__descripcion">
-                                <h3 class="worker__nombre">Selmary Medina Pérez</h3>
-                                <p class="worker__profesion">Community Manager</p>
+                        @foreach($team as $person)
+                            <div class="worker">
+                                <img loading="lazy" class="worker__img" src="{{$person->photo}}" alt="{{$person->name}}">
+                                <div class="worker__descripcion">
+                                    <h3 class="worker__nombre">{{$person->name}}</h3>
+                                    <p class="worker__profesion">{{$person->profession}}</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="worker">
-                            <img class="worker__img" src="./images/jonny.jpg" alt="Camilo Andres Colon Cañizares">
-                            <div class="worker__descripcion">
-                                <h3 class="worker__nombre">Camilo Andres Colon Cañizares</h3>
-                                <p class="worker__profesion">fullstack</p>
-                            </div>
-                        </div>
-                        <div class="worker">
-                            <img class="worker__img" src="./images/jordan.jpg" alt="Jordan Jhonsson Cuadro Negrete">
-                            <div class="worker__descripcion">
-                                <h3 class="worker__nombre">Jordan Jhonsson Cuadro Negrete</h3>
-                                <p class="worker__profesion">Backend</p>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
