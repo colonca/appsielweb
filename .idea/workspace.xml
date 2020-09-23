@@ -20,7 +20,383 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ea7d65-9aae-44db-b00d-9eae227d89fc" name="Default Changelist" comment="'Integración con livewire y formulario de contacto'">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Backoffice/Breadcrumbs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Backoffice/Categories/CreateOrUpdate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Backoffice/Categories/Index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/animate.css/css/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/chartist/chartist.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/dataTables.bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/ionicons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/jquery.mCustomScrollbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/morris.js/css/morris.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/partials/_dark.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/partials/_general.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/partials/_generic.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/partials/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/partials/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/partials/menu/_pcmenu.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/partials/menu/pccoded-horizontal-menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/partials/menu/pccoded-horizontal-menu.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/partials/menu/pccoded-horizontal-menu.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/partials/other/_alert.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/partials/other/_authentication.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/partials/other/_breadcrumb.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/partials/other/_charts.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/partials/other/_chat.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/partials/other/_color.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/partials/other/_draggable.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/partials/other/_e-payment.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/partials/other/_editors.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/partials/other/_fb-wall.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/partials/other/_full-calender.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/partials/other/_job-find.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/partials/other/_mail-pages.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/partials/other/_maps.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/partials/other/_navbars.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/partials/other/_note.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/partials/other/_pre-loader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/partials/other/_prism.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/partials/other/_progress-bar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/partials/other/_range-slider.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/partials/other/_rating.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/partials/responsive/_responsive.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/partials/tables/_tables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/partials/theme-elements/_box-shadow.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/partials/theme-elements/_button.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/partials/theme-elements/_form-elements.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/partials/theme-elements/_icon-layout.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/partials/theme-elements/_label-badges.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/partials/theme-elements/_ready-to-use.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/partials/todo/_todo.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/partials/widget-dashboard/_dashboard.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/partials/widget-dashboard/_widget.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/pcoded-horizontal.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/pcoded-horizontal.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/style.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/css/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/SVG-animated/svg-weather.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/font-awesome/HELP-US-OUT.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/font-awesome/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/font-awesome/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/font-awesome/less/animated.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/font-awesome/less/bordered-pulled.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/font-awesome/less/core.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/font-awesome/less/fixed-width.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/font-awesome/less/font-awesome.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/font-awesome/less/icons.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/font-awesome/less/larger.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/font-awesome/less/list.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/font-awesome/less/mixins.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/font-awesome/less/path.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/font-awesome/less/rotated-flipped.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/font-awesome/less/screen-reader.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/font-awesome/less/stacked.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/font-awesome/less/variables.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/font-awesome/scss/_animated.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/font-awesome/scss/_bordered-pulled.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/font-awesome/scss/_core.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/font-awesome/scss/_fixed-width.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/font-awesome/scss/_icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/font-awesome/scss/_larger.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/font-awesome/scss/_list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/font-awesome/scss/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/font-awesome/scss/_path.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/font-awesome/scss/_rotated-flipped.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/font-awesome/scss/_screen-reader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/font-awesome/scss/_stacked.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/font-awesome/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/font-awesome/scss/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/font-awesome/scss/font-awesome.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/font-awesome/scss/font-awesome.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/icofont/css/icofont.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/icofont/fonts/icofont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/icofont/fonts/icofont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/icofont/fonts/icofont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/icofont/fonts/icofont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/themify-icons/fonts/themify.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/themify-icons/fonts/themify.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/themify-icons/fonts/themify.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/themify-icons/fonts/themify.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/icon/themify-icons/themify-icons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images-old/auth/Logo-small-bottom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images-old/auth/logo-dark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images-old/auth/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images-old/avatar-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images-old/avatar-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images-old/avatar-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images-old/avatar-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images-old/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images-old/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images-old/flags/ENGLISH.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images-old/flags/FRANCE.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images-old/flags/PORTO.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images-old/flags/SPAIN.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images-old/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images-old/mega-menu/01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images-old/mega-menu/02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images-old/mega-menu/03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images-old/mega-menu/04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images-old/mega-menu/05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images-old/mega-menu/06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images-old/pattern2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images-old/user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/auth/Logo-small-bottom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/auth/logo-dark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/auth/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/avatar-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/avatar-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/avatar-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/avatar-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/blog/blog-r-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/blog/blog-r-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/blog/blog-r-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/flags/ENGLISH.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/flags/FRANCE.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/flags/PORTO.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/flags/SPAIN.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/pattern1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/pattern2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/pattern3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/pattern4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/pattern5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/pattern6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/pattern7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/pattern8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/pattern9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/product/prod1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/product/prod2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/product/prod3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/product/prod4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/select-arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/slider-full (2).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/slider-full (4).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/widget/Group-user.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/widget/icon-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/widget/icon-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/widget/icon-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/widget/icon-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/widget/map-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/widget/mountain.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/widget/prod.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/widget/prod1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/widget/prod2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/widget/prod3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/widget/prod4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/widget/profile-person1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/widget/proticketbg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/widget/seoimg1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/widget/seoimg2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/widget/seoimg3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/widget/sparcle-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/widget/sparcle-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/widget/user-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/widget/user-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/widget/user-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/widget/user-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/widget/user-blur-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/widget/user1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/widget/user2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/widget/user3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/images/widget/user4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/js/SmoothScroll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/js/bootstrap-growl.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/js/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/js/chart.js/Chart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/js/common-pages.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/js/jquery-datatable/extensions/export/buttons.flash.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/js/jquery-datatable/extensions/export/buttons.html5.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/js/jquery-datatable/extensions/export/buttons.print.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/js/jquery-datatable/extensions/export/dataTables.buttons.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/js/jquery-datatable/extensions/export/jszip.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/js/jquery-datatable/extensions/export/pdfmake.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/js/jquery-datatable/extensions/export/vfs_fonts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/js/jquery-datatable/jquery.dataTables.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/js/jquery-datatable/skin/bootstrap/css/dataTables.bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/js/jquery-datatable/skin/bootstrap/css/dataTables.bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/js/jquery-datatable/skin/bootstrap/images/Sorting icons.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/js/jquery-datatable/skin/bootstrap/images/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/js/jquery-datatable/skin/bootstrap/images/sort_asc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/js/jquery-datatable/skin/bootstrap/images/sort_asc_disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/js/jquery-datatable/skin/bootstrap/images/sort_both.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/js/jquery-datatable/skin/bootstrap/images/sort_desc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/js/jquery-datatable/skin/bootstrap/images/sort_desc_disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/js/jquery-datatable/skin/bootstrap/js/dataTables.bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/js/jquery-datatable/skin/bootstrap/js/dataTables.bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/js/jquery-slimscroll/jquery.slimscroll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/js/jquery-ui/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/js/jquery.mCustomScrollbar.concat.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/js/jquery.mousewheel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/js/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/js/modernizr/css-scrollbars.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/js/modernizr/modernizr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/js/morris.js/morris.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/js/pcoded.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/js/popper.js/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/js/raphael/raphael.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/js/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/js/script.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/js/vartical-demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/accordion/accordion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/accordion/accordion.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/chart/c3/c3-custom-chart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/chart/chartjs/chartjs-custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/chart/chartlist/chartlist-custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/chart/chartlist/js/chartist-plugin-threshold.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/chart/chartlist/js/chartist-plugin-tooltip.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/chart/echarts/echart-custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/chart/echarts/js/echarts-all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/chart/float/float-chart-custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/chart/float/jquery.flot.categories.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/chart/float/jquery.flot.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/chart/float/jquery.flot.pie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/chart/google/js/custom-google-chart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/chart/knob/jquery.knob.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/chart/knob/knob-custom-chart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/chart/morris/morris-custom-chart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/chart/nv-chart/js/stream_layers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/chart/nvd3/chart-nvd3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/chart/peity/peity-custom-chart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/chart/radial/css/radial.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/chart/rickshow/d3.layout.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/chart/rickshow/rickshow-custom-.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/chart/sparkline/chart-sparkline.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/dashboard/amchart/css/amchart.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/dashboard/amchart/css/export.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/dashboard/amchart/js/amcharts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/dashboard/amchart/js/custom-amchart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/dashboard/amchart/js/export.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/dashboard/amchart/js/images/dragIconRoundBig.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/dashboard/amchart/js/images/dragIconRoundBigH.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/dashboard/amchart/js/light.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/dashboard/amchart/js/serial.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/dashboard/analytic-dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/dashboard/analytic-dashboard.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/dashboard/crm-dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/dashboard/custom-dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/dashboard/custom-dashboard.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/dashboard/custom-dashboard1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/dashboard/d3chart/js/bullet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/dashboard/d3chart/js/bullets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/dashboard/d3chart/js/d3.v3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/dashboard/ecommerce-dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/dashboard/high-chart/js/high-chart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/dashboard/horizontal-timeline/css/cd-arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/dashboard/horizontal-timeline/css/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/dashboard/horizontal-timeline/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/dashboard/horizontal-timeline/js/jquery.mobile.custom.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/dashboard/horizontal-timeline/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/dashboard/project-dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/dashboard/project-dashboard.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/flag-icons.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/form-validation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/google-maps/gmaps.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/google-maps/jquery.gmaps.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/icon-modal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/notification/notification.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/notification/notification.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/range-slider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/sortable-custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/todo/todo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/user-profile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/vector-maps/css/jquery-jvectormap-2.0.2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/vector-maps/css/jquery-jvectormap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/vector-maps/js/gdp-data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/vector-maps/js/jquery-jvectormap-2.0.2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/vector-maps/js/jquery-jvectormap-2.0.3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/vector-maps/js/jquery-jvectormap-asia-mill.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/vector-maps/js/jquery-jvectormap-au-mill.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/vector-maps/js/jquery-jvectormap-ca-lcc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/vector-maps/js/jquery-jvectormap-de-mill.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/vector-maps/js/jquery-jvectormap-in-mill.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/vector-maps/js/jquery-jvectormap-uk-mill-en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/vector-maps/js/jquery-jvectormap-us-aea-en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/vector-maps/js/jquery-jvectormap-us-il-chicago-mill-en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/vector-maps/js/jquery-jvectormap-world-mill-en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/vector-maps/js/map-vector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/widget/amchart/amcharts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/widget/amchart/amcharts.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/widget/amchart/ammap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/widget/amchart/ammap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/widget/amchart/continentsLow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/widget/amchart/continentsLow.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/widget/amchart/gauge.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/widget/amchart/gauge.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/widget/amchart/light.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/widget/amchart/light.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/widget/amchart/pie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/widget/amchart/pie.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/widget/amchart/serial.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/widget/amchart/serial.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/widget/amchart/worldLow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/widget/amchart/worldLow.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/widget/calender/pignose.calendar.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/widget/calender/pignose.calendar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/widget/custom-widget.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/widget/custom-widget1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/widget/custom-widget1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/widget/custom-widget2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/widget/excanvas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/widget/flipclock/flipclock.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/widget/flipclock/flipclock.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/widget/gauge/gauge.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/widget/jquery.sparkline.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/widget/pretty-calender/calendar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/widget/pretty-calender/calendar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/widget/timer/TimeCircles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/widget/timer/jquery.countdown.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/widget/timer/waypoints.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/widget/waterball/createWaterBall-jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/widget/widget-advanced.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/pages/widget/widget-advanced.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/scss/partials/_dark.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/scss/partials/_general.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/scss/partials/_generic.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/scss/partials/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/scss/partials/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/scss/partials/menu/_pcmenu.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/scss/partials/menu/pccoded-horizontal-menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/scss/partials/menu/pccoded-horizontal-menu.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/scss/partials/menu/pccoded-horizontal-menu.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/scss/partials/other/_authentication.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/scss/partials/other/_breadcrumb.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/scss/partials/other/_charts.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/scss/partials/other/_color.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/scss/partials/other/_maps.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/scss/partials/other/_navbars.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/scss/partials/other/_progress-bar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/scss/partials/responsive/_responsive.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/scss/partials/tables/_tables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/scss/partials/theme-elements/_button.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/scss/partials/theme-elements/_form-elements.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/scss/partials/theme-elements/_icon-layout.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/scss/partials/theme-elements/_label-badges.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/scss/partials/todo/_todo.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/scss/partials/widget-dashboard/_widget.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backoffice/assets/scss/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backoffice/categories/list.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backoffice/layouts/admin.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/backoffice/breadcrumbs.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/backoffice/categories/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/backoffice/categories/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Appsielweb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Appsielweb.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/app/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Comment.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" afterDir="false" />
@@ -44,6 +420,16 @@
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/campaings/ebookCincoEstrategias.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/campaings/ebookCincoEstrategias.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/cliente.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/customer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/contacto.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/contacto.blade.php" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/app/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/cache/livewire-components.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/cache/livewire-components.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/cache/packages.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/cache/packages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/cache/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/cache/services.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+>>>>>>> a2999f21bd1f41fb7c93471c4687617797682a37
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,8 +550,9 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
       <path value="$PROJECT_DIR$/vendor/laraveles/spanish" />
-      <path value="$PROJECT_DIR$/vendor/livewire/livewire" />
       <path value="$PROJECT_DIR$/vendor/artesaos/seotools" />
+      <path value="$PROJECT_DIR$/vendor/livewire/livewire" />
+      <path value="$PROJECT_DIR$/vendor/laracasts/flash" />
     </include_path>
   </component>
   <component name="ProjectId" id="1g2yNL5kdAdKj5a7ggfSU1AljMG" />
@@ -179,7 +566,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/models" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Parroquia" />
+>>>>>>> a2999f21bd1f41fb7c93471c4687617797682a37
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -188,9 +579,11 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+<<<<<<< HEAD
       <recent name="$PROJECT_DIR$/resources" />
       <recent name="$PROJECT_DIR$/public/svg" />
       <recent name="$PROJECT_DIR$/resources/views" />
@@ -203,6 +596,20 @@
       <recent name="$PROJECT_DIR$/resources/views/layouts" />
       <recent name="$PROJECT_DIR$/app/View/Components/campaings" />
       <recent name="$PROJECT_DIR$/resources/views/campaigns" />
+=======
+      <recent name="C:\xampp\htdocs\Appsielweb\public\backoffice\assets\css" />
+      <recent name="C:\xampp\htdocs\Appsielweb\public\backoffice\assets\js" />
+      <recent name="C:\xampp\htdocs\Appsielweb\public\backoffice" />
+      <recent name="$PROJECT_DIR$/resources" />
+      <recent name="$PROJECT_DIR$/public/svg" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/layouts" />
+      <recent name="$PROJECT_DIR$/app/View/Components/campaings" />
+      <recent name="$PROJECT_DIR$/resources/views/campaigns" />
+      <recent name="$PROJECT_DIR$/resources/views/livewire/blog" />
+      <recent name="$PROJECT_DIR$/app/Http/Livewire/Blog" />
+>>>>>>> a2999f21bd1f41fb7c93471c4687617797682a37
     </key>
   </component>
   <component name="RunManager">
@@ -211,7 +618,7 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -258,10 +665,15 @@
       <workItem from="1599833298263" duration="3015000" />
       <workItem from="1600027932124" duration="2304000" />
       <workItem from="1600135926204" duration="2393000" />
+<<<<<<< HEAD
       <workItem from="1600185615339" duration="2333000" />
       <workItem from="1600264188608" duration="187000" />
       <workItem from="1600789995279" duration="18993000" />
       <workItem from="1600867979510" duration="6472000" />
+=======
+      <workItem from="1600185615339" duration="458000" />
+      <workItem from="1600788998969" duration="27908000" />
+>>>>>>> a2999f21bd1f41fb7c93471c4687617797682a37
     </task>
     <task id="LOCAL-00001" summary="'Integración con livewire y formulario de contacto'">
       <created>1598473825800</created>
@@ -295,7 +707,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -318,9 +730,15 @@
       <screen x="1024" y="0" width="1366" height="768" />
     </state>
     <state x="1402" y="153" key="#com.intellij.fileTypes.FileTypeChooser/1024.0.1366.768/2390.0.1366.768/0.0.1024.723@1024.0.1366.768" timestamp="1599324209961" />
+<<<<<<< HEAD
     <state x="1106" y="83" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1600806921607">
       <screen x="800" y="0" width="1366" height="768" />
+=======
+    <state x="306" y="30" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1600876181691">
+      <screen x="0" y="30" width="1366" height="738" />
+>>>>>>> a2999f21bd1f41fb7c93471c4687617797682a37
     </state>
+    <state x="306" y="30" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.30.1366.738@0.30.1366.738" timestamp="1600876181691" />
     <state x="2696" y="83" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1024.0.1366.768/2390.0.1366.768/0.0.1024.723@2390.0.1366.768" timestamp="1599770901497" />
     <state x="1106" y="83" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/800.0.1366.768/2166.0.1366.768/0.84.800.600@800.0.1366.768" timestamp="1600806921607" />
     <state x="2811" y="142" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1598026995491">
@@ -331,11 +749,16 @@
       <screen x="1024" y="0" width="1366" height="768" />
     </state>
     <state x="1431" y="273" width="541" height="176" key="ComposerInitDialogKey/1024.0.1366.768/2390.0.1366.768/0.0.1024.723@1024.0.1366.768" timestamp="1598288635800" />
+<<<<<<< HEAD
     <state x="1263" y="129" width="424" height="483" key="FileChooserDialogImpl" timestamp="1600790619019">
       <screen x="800" y="0" width="1366" height="768" />
+=======
+    <state x="463" y="154" width="424" height="483" key="FileChooserDialogImpl" timestamp="1600867589775">
+      <screen x="0" y="30" width="1366" height="738" />
+>>>>>>> a2999f21bd1f41fb7c93471c4687617797682a37
     </state>
     <state x="463" y="121" width="424" height="483" key="FileChooserDialogImpl/0.0.1366.723@0.0.1366.723" timestamp="1598478749371" />
-    <state x="463" y="154" key="FileChooserDialogImpl/0.30.1366.738@0.30.1366.738" timestamp="1597352309129" />
+    <state x="463" y="154" key="FileChooserDialogImpl/0.30.1366.738@0.30.1366.738" timestamp="1600867589775" />
     <state x="2853" y="129" key="FileChooserDialogImpl/1024.0.1366.768/0.0.1024.723/2390.0.1366.768@2390.0.1366.768" timestamp="1598037743478" />
     <state x="1487" y="129" key="FileChooserDialogImpl/1024.0.1366.768/2390.0.1366.768/0.0.1024.723@1024.0.1366.768" timestamp="1600029632429" />
     <state x="2853" y="129" key="FileChooserDialogImpl/1024.0.1366.768/2390.0.1366.768/0.0.1024.723@2390.0.1366.768" timestamp="1599838090122" />
@@ -375,18 +798,29 @@
       <screen x="0" y="0" width="1366" height="723" />
     </state>
     <state x="380" y="136" key="git4idea.merge.GitPullDialog/0.0.1366.723@0.0.1366.723" timestamp="1598477307085" />
+<<<<<<< HEAD
     <state x="1147" y="169" key="run.anything.popup" timestamp="1600833635580">
       <screen x="800" y="0" width="1366" height="768" />
+=======
+    <state x="347" y="192" key="run.anything.popup" timestamp="1600798206407">
+      <screen x="0" y="30" width="1366" height="738" />
+>>>>>>> a2999f21bd1f41fb7c93471c4687617797682a37
     </state>
     <state x="347" y="159" key="run.anything.popup/0.0.1366.723@0.0.1366.723" timestamp="1597778193659" />
+    <state x="347" y="192" key="run.anything.popup/0.30.1366.738@0.30.1366.738" timestamp="1600798206407" />
     <state x="1371" y="169" key="run.anything.popup/1024.0.1366.768/2390.0.1366.768/0.0.1024.723@1024.0.1366.768" timestamp="1599663506909" />
     <state x="2737" y="169" key="run.anything.popup/1024.0.1366.768/2390.0.1366.768/0.0.1024.723@2390.0.1366.768" timestamp="1597722023250" />
+<<<<<<< HEAD
     <state x="1147" y="169" key="run.anything.popup/800.0.1366.768/2166.0.1366.768/0.84.800.600@800.0.1366.768" timestamp="1600833635580" />
     <state x="1146" y="14" width="672" height="707" key="search.everywhere.popup" timestamp="1600826068628">
       <screen x="800" y="0" width="1366" height="768" />
+=======
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1600875730501">
+      <screen x="0" y="30" width="1366" height="738" />
+>>>>>>> a2999f21bd1f41fb7c93471c4687617797682a37
     </state>
     <state x="346" y="56" width="672" height="665" key="search.everywhere.popup/0.0.1366.723@0.0.1366.723" timestamp="1598467963065" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.30.1366.738@0.30.1366.738" timestamp="1597347581937" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.30.1366.738@0.30.1366.738" timestamp="1600875730501" />
     <state x="2736" y="14" width="672" height="707" key="search.everywhere.popup/1024.0.1366.768/0.0.1024.723/2390.0.1366.768@2390.0.1366.768" timestamp="1598030164326" />
     <state x="1370" y="14" width="672" height="707" key="search.everywhere.popup/1024.0.1366.768/2390.0.1366.768/0.0.1024.723@1024.0.1366.768" timestamp="1599664126390" />
     <state x="2736" y="14" width="672" height="707" key="search.everywhere.popup/1024.0.1366.768/2390.0.1366.768/0.0.1024.723@2390.0.1366.768" timestamp="1599771679009" />

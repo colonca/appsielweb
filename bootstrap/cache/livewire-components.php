@@ -1,5 +1,8 @@
 <?php return array (
   'about.team' => 'App\\Http\\Livewire\\About\\Team',
+  'backoffice.breadcrumbs' => 'App\\Http\\Livewire\\Backoffice\\Breadcrumbs',
+  'backoffice.categories.create-or-update' => 'App\\Http\\Livewire\\Backoffice\\Categories\\CreateOrUpdate',
+  'backoffice.categories.index' => 'App\\Http\\Livewire\\Backoffice\\Categories\\Index',
   'blog.comment' => 'App\\Http\\Livewire\\Blog\\Comment',
   'blog.comments' => 'App\\Http\\Livewire\\Blog\\Comments',
   'blog.noticias' => 'App\\Http\\Livewire\\Blog\\Noticias',
