@@ -1,18 +1,21 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
 
-class Newsletter extends Model
+class User extends Authenticatable
 {
+    use Notifiable;
+
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
-        'id', 'email', 'created_at', 'update_at'
+        'name', 'email', 'password',
     ];
 
     /**
@@ -21,7 +24,7 @@ class Newsletter extends Model
      * @var array
      */
     protected $hidden = [
-        //
+        'password', 'remember_token',
     ];
 
     /**
@@ -30,6 +33,6 @@ class Newsletter extends Model
      * @var array
      */
     protected $casts = [
-        //
+        'email_verified_at' => 'datetime',
     ];
 }

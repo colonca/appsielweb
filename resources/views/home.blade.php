@@ -17,7 +17,7 @@
                      <div class="text-gray-400 font-bold text-left">Sistemas para el crecimiento empresarial</div>
                      <div class="text-sm md:text-2xl text-left text-gray-400">Somos una empresa dedicada al desarrollo de sistemas de información que aumenten la productividad de nuestros clientes.</div>
                      <div class="text-left pt-4 pb-2">
-                         <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+                         <a href="{{url('/contactUs')}}" class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Solicita información aquí</a>
                      </div>
                  </div>
                  <div class="w-2/5 flex-1">
@@ -121,7 +121,7 @@
 
     <livewire:blog.noticias/>
 
-    <livewire:cliente/>
+    <livewire:customer/>
 
    <livewire:newsletters />
 
@@ -131,16 +131,11 @@
     <script src="{{asset('js/index.bundle.js')}}"></script>
     <script src="{{asset('main.bundle.js')}}"></script>
     <script src="{{asset('js/jquery.min.js')}}"></script>
-    <script src="{{asset('js/splide.min.js')}}"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <script>
 
-        new Splide( '.splide',{
-            type: 'loop',
-            cover:true,
-            autoplay: true,
-            height: '10rem',
-        }).mount();
+
 
         window.livewire.on('subcripcionToNewsletter',resp => {
             if(resp.status == 'ok'){

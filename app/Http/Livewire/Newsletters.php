@@ -3,7 +3,7 @@
 namespace App\Http\Livewire;
 
 use Livewire\Component;
-use App\Newsletter;
+use App\Models\Newsletter;
 
 class Newsletters extends Component
 {

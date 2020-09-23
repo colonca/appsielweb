@@ -15,32 +15,32 @@
             <div class="contacto__content">
                 <div class="contacto__form">
                     <h3>Solicita Información</h3>
-                    <p>¿Qué necesitas? - Especifique todos los detalles posibles para realizar un estudio de viabilidad del proyecto.</p>
+                    <p class="text-gray-400">¿Qué necesitas? - Especifique todos los detalles posibles para realizar un estudio de viabilidad del proyecto.</p>
                     @if(!$enviado)
                         <form  wire:submit.prevent="guardar" >
-                            <div class="form-group">
+                            <div class="form-group text-gray-400">
                                 <label for="">Nombre <span>*<span> @error('nombre') <span>{{$message}}</span> @enderror</span></span></label>
-                                <input type="text" wire:model="nombre">
+                                <input class="pl-2 bg-gray-800 rounded focus:outline-none text-gray-400" placeholder="Escribe tu nombre aquí" type="text" wire:model="nombre">
                             </div>
-                            <div class="form-group">
+                            <div class="form-group text-gray-400">
                                 <label for="">Email <span>* <span> @error('email') <span>{{$message}}</span> @enderror</span></span></label>
-                                <input type="text" wire:model="email" required>
+                                <input class="pl-2 bg-gray-800 rounded focus:outline-none text-gray-400" type="text" placeholder="example@mail.com" wire:model="email" required>
                             </div>
-                            <div class="form-group">
+                            <div class="form-group text-gray-400">
                                 <label for="">Telefono <span>* @error('telefono') <span>{{$message}}</span> @enderror</span></label>
-                                <input type="text" wire:model="telefono" required>
+                                <input type="text" class="pl-2 bg-gray-800 rounded focus:outline-none text-gray-400" placeholder="+57 (314) 656 1062" wire:model="telefono" required>
 
                             </div>
-                            <div class="form-group">
+                            <div class="form-group text-gray-400">
                                 <label for="">Presupuesto</label>
-                                <input type="text" wire:model.lazy="presupuesto">
+                                <input type="text" class="pl-2 bg-gray-800 rounded focus:outline-none text-gray-400" placeholder="$5.555.555" wire:model.lazy="presupuesto">
                             </div>
-                            <div class="form-group">
+                            <div class="form-group text-gray-400">
                                 <label for="">Consulta <span>* <span> @error('consulta') <span>{{$message}}</span> @enderror</span></span></label>
-                                <textarea  cols="30" rows="10" placeholder="¿En qué podemos ayudarte?" wire:model.lazy="consulta" required></textarea>
+                                <textarea class="pl-2 bg-gray-800 rounded focus:outline-none text-gray-400" cols="30" rows="10" placeholder="¿En qué podemos ayudarte?" wire:model.lazy="consulta" required></textarea>
                             </div>
 
-                            <button type="submit" style="cursor: pointer;" class="activo">Enviar</button>
+                            <button type="submit" style="cursor: pointer;" class="mt-2 py-1 px-8 bg-gray-800 rounded font-semibold focus:outline-none focus:shadow-outline">Enviar</button>
                         </form>
                     @else
                         <p>Tu propuesta ha sido enviada.</p>

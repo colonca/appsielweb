@@ -2,10 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\LandingPage;
+use App\Models\LandingPage;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
-use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
 
 class LandingPageController extends Controller

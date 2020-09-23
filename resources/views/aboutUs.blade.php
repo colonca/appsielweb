@@ -12,44 +12,35 @@
 
     @include('layouts.campaing')
 
-    <section class="our__team">
-        <div class="wraper">
-            <div class="our__team__content">
-                <h2 class="our__team__title">Nuestro Equipo</h2>
-                <blockquote class="person">
-                    <img class="person__img" src="./images/jonny.jpg" alt="Camilo Andres Colon Cañizares">
-                    <div class="person__descripcion">
-                        <h3 class="person__nombre">Camilo Andres Colon Cañizares</h3>
-                        <p class="person__profesion">fullstack</p>
-                        <cite>“vive aprendiendo la vida nunca para de enseñar ”</cite>
-                    </div>
-                </blockquote>
-                <div class="peoples">
-                    <div class="worker">
-                        <img class="worker__img" src="./images/Selmary.jpg" alt="Selmary Medina Pérez">
-                        <div class="worker__descripcion">
-                            <h3 class="worker__nombre">Selmary Medina Pérez</h3>
-                            <p class="worker__profesion">Community Manager</p>
-                        </div>
-                    </div>
-                    <div class="worker">
-                        <img class="worker__img" src="./images/jonny.jpg" alt="Camilo Andres Colon Cañizares">
-                        <div class="worker__descripcion">
-                            <h3 class="worker__nombre">Camilo Andres Colon Cañizares</h3>
-                            <p class="worker__profesion">fullstack</p>
-                        </div>
-                    </div>
-                    <div class="worker">
-                        <img class="worker__img" src="./images/jordan.jpg" alt="Jordan Jhonsson Cuadro Negrete">
-                        <div class="worker__descripcion">
-                            <h3 class="worker__nombre">Jordan Jhonsson Cuadro Negrete</h3>
-                            <p class="worker__profesion">Backend</p>
-                        </div>
-                    </div>
-                </div>
+    <livewire:about.team/>
+
+    <div class="wraper">
+        <div class="text-gray-400 md:text-2xl lg:text-4xl text-center font-bold  my-8">Opiniones de nuestros Clientes</div>
+        <div class="p-6 md:w-10/12 mx-auto md:flex sm:justify-center items-center rounded-lg bg-gray-900 mt-4">
+            <img class="object-cover rounded-full w-25 h-25 md:w-32 md:h-32 md:mr-8" src="./images/jonny.jpg" alt="Woman paying for a purchase">
+            <div class="flex flex-col justify-between">
+                <cite class="text-sm md:text-2xl mt-2">"Muy buen trabajo, equipo muy profesional y totalmente recomendable"</cite>
+                <div class="text-indigo-700">Fran</div>
+                <div class="text-indigo-400">CEO Marketplace Appsiel.com.co</div>
             </div>
         </div>
-    </section>
+        <div class="p-6 md:w-10/12 mx-auto md:flex sm:justify-center items-center rounded-lg bg-gray-900 mt-4">
+            <img class="object-cover rounded-full w-25 h-25 md:w-32 md:h-32 md:mr-8" src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=448&q=80" alt="Woman paying for a purchase">
+            <div class="flex flex-col justify-between">
+                <cite class="text-sm md:text-2xl mt-2">"Desarrollaron la página web de nuestra empresa y estamos muy contentos con el trabajo realizado. Siempre atentos y contestando muy rápido. Oliver es muy resolutivo ante cualquier incidencia o duda q se pueda producir. Recomendables!!"</cite>
+                <div class="text-indigo-700">Marta</div>
+                <div class="text-indigo-400">Web de Reservas online HappyTrail.com</div>
+            </div>
+        </div>
+        <div class="p-6 md:w-10/12 mx-auto md:flex sm:justify-center items-center rounded-lg bg-gray-900 mt-4">
+            <img class="object-cover rounded-full w-25 h-25 md:w-32 md:h-32 md:mr-8" src="./images/jordan.jpg" alt="Woman paying for a purchase">
+            <div class="flex flex-col justify-between">
+                <cite class="text-sm md:text-2xl mt-2">"Me gustaría expresar mi gratitud a estos chicos por mi nueva página web de viajes y mi aplicación para los tours. Aprecio toda su ayuda y consejos, ¡les deseo todo lo mejor!"</cite>
+                <div class="text-indigo-700">Jordan</div>
+                <div class="text-indigo-400">CEO Agencia de Viajes Trivago</div>
+            </div>
+        </div>
+    </div>
 
 @endsection
 

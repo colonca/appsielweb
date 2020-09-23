@@ -2,7 +2,7 @@
 
 namespace App\Http\Livewire\Blog;
 
-use App\Post;
+use App\Models\Post;
 use Livewire\Component;
 
 class Noticias extends Component

@@ -2,7 +2,7 @@
 
 namespace App\Http\Livewire\Blog;
 
-use App\Comment as Comments;
+use App\Models\Comment as Comments;
 
 use Livewire\Component;
 
