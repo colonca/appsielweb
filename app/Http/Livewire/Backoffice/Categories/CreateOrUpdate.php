@@ -2,7 +2,7 @@
 
 namespace App\Http\Livewire\Backoffice\Categories;
 
-use App\Category;
+use App\Models\Category;
 use Illuminate\Support\Str;
 use Livewire\Component;
 use phpDocumentor\Reflection\Types\Boolean;
@@ -17,7 +17,7 @@ class CreateOrUpdate extends Component
     protected $listeners = ['categoryEdit'];
 
     public function render() {
-        return view('livewire.backoffice.categories.create');
+        return view('livewire.backoffice.categories.create-or-update');
     }
 
     public function save() {

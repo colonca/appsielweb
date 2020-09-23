@@ -2,7 +2,7 @@
     @php($url = ['Inicio'=>url('/home')])
     <livewire:backoffice.breadcrumbs title="Categories" :urls="$url" description="Gestiona las categorías del blog"/>
 
-    <livewire:backoffice.categories.create/>
+    <livewire:backoffice.categories.create-or-update/>
     <div class="card">
         <div class="card-header">
             <h5>Listado de Categorías</h5>
