@@ -1,5 +1,5 @@
 <div>
-    @php($url = ['Inicio'=>url('/home')])
+    @php($url = ['Categoría'=>route('categories.index')])
 
     <livewire:backoffice.breadcrumbs title="Categories" :urls="$url" description="Gestiona las categorías del blog"/>
 

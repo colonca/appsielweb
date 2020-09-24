@@ -301,21 +301,40 @@
                         </ul>
                         <div class="pcoded-navigatio-lavel" data-i18n="nav.category.forms">Blogs &amp; Post</div>
                         <ul class="pcoded-item pcoded-left-item">
-                            <li>
+                            @if($location == 'categories')
+                            <li class="active">
                                 <a href="{{route('categories.index')}}">
                                     <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
                                     <span class="pcoded-mtext" data-i18n="nav.form-components.main">Categoría</span>
                                     <span class="pcoded-mcaret"></span>
                                 </a>
                             </li>
-                            <li>
+                            @else
+                                <li>
+                                    <a href="{{route('categories.index')}}">
+                                        <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Categoría</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                            @endif
+                            @if($location == 'post')
+                            <li class="active">
                                 <a href="{{route('post.index')}}">
                                     <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
                                     <span class="pcoded-mtext" data-i18n="nav.form-components.main">Post</span>
                                     <span class="pcoded-mcaret"></span>
                                 </a>
                             </li>
-
+                            @else
+                                <li>
+                                    <a href="{{route('post.index')}}">
+                                        <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Post</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                            @endif
                         </ul>
 
                         <div class="pcoded-navigatio-lavel" data-i18n="nav.category.forms">Chart &amp; Maps</div>
@@ -334,7 +353,7 @@
                                     <span class="pcoded-mcaret"></span>
                                 </a>
                             </li>
-                            <li class="pcoded-hasmenu active pcoded-trigger">
+                            <li class="pcoded-hasmenu">
                                 <a href="javascript:void(0)">
                                     <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
                                     <span class="pcoded-mtext" data-i18n="nav.basic-components.main">Pages</span>
@@ -356,7 +375,7 @@
                                             <span class="pcoded-mcaret"></span>
                                         </a>
                                     </li>
-                                    <li class="active ">
+                                    <li class="">
                                         <a href="sample-page.html">
                                             <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                             <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Sample Page</span>

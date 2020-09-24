@@ -6,7 +6,7 @@
             <p class="text-muted m-b-10">{{$description}}</p>
             <ul class="breadcrumb-title b-t-default p-t-10">
                 <li class="breadcrumb-item">
-                    <a href="{{route('/home')}}">
+                    <a href="{{url('/admin')}}">
                         <i class="fa fa-home"></i>
                     </a>
                 </li>
