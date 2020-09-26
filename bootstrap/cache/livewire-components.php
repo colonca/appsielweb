@@ -3,6 +3,8 @@
   'backoffice.breadcrumbs' => 'App\\Http\\Livewire\\Backoffice\\Breadcrumbs',
   'backoffice.categories.create-or-update' => 'App\\Http\\Livewire\\Backoffice\\Categories\\CreateOrUpdate',
   'backoffice.categories.index' => 'App\\Http\\Livewire\\Backoffice\\Categories\\Index',
+  'backoffice.customer.create-or-update' => 'App\\Http\\Livewire\\Backoffice\\Customer\\CreateOrUpdate',
+  'backoffice.customer.index' => 'App\\Http\\Livewire\\Backoffice\\Customer\\Index',
   'blog.comment' => 'App\\Http\\Livewire\\Blog\\Comment',
   'blog.comments' => 'App\\Http\\Livewire\\Blog\\Comments',
   'blog.noticias' => 'App\\Http\\Livewire\\Blog\\Noticias',

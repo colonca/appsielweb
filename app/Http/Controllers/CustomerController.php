@@ -2,10 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Category;
 use Illuminate\Http\Request;
 
-class CategoryController extends Controller
+class CustomerController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,8 +12,8 @@ class CategoryController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index() {
-        return view('backoffice.categories.list')
-            ->with('location', 'categories');
+        return view('backoffice.customer.list')
+            ->with('location', 'customer');
     }
 
     /**

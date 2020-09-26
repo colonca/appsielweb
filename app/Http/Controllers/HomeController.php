@@ -23,7 +23,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return view('home')
+            ->with('location','inicio');
+    }
+
+    public function inicio(){
+        return view('backoffice.layouts.admin')
+            ->with('location','inicio');
     }
 
     public function quienes_somos()

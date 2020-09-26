@@ -301,40 +301,79 @@
                         </ul>
                         <div class="pcoded-navigatio-lavel" data-i18n="nav.category.forms">Blogs &amp; Post</div>
                         <ul class="pcoded-item pcoded-left-item">
-                            <li>
+                            @if($location == 'categories')
+                            <li class="active">
                                 <a href="{{route('categories.index')}}">
                                     <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
                                     <span class="pcoded-mtext" data-i18n="nav.form-components.main">Categoría</span>
                                     <span class="pcoded-mcaret"></span>
                                 </a>
                             </li>
-                            <li>
-                                <a href="bs-basic-table.html">
+                            @else
+                                <li>
+                                    <a href="{{route('categories.index')}}">
+                                        <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Categoría</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                            @endif
+                            @if($location == 'post')
+                            <li class="active">
+                                <a href="{{route('post.index')}}">
                                     <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
                                     <span class="pcoded-mtext" data-i18n="nav.form-components.main">Post</span>
                                     <span class="pcoded-mcaret"></span>
                                 </a>
                             </li>
-
+                            @else
+                                <li>
+                                    <a href="{{route('post.index')}}">
+                                        <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Post</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                            @endif
                         </ul>
 
                         <div class="pcoded-navigatio-lavel" data-i18n="nav.category.forms">Chart &amp; Maps</div>
                         <ul class="pcoded-item pcoded-left-item">
-                            <li>
-                                <a href="chart.html">
-                                    <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
-                                    <span class="pcoded-mtext" data-i18n="nav.form-components.main">Chart</span>
-                                    <span class="pcoded-mcaret"></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="map-google.html">
-                                    <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
-                                    <span class="pcoded-mtext" data-i18n="nav.form-components.main">Maps</span>
-                                    <span class="pcoded-mcaret"></span>
-                                </a>
-                            </li>
-                            <li class="pcoded-hasmenu active pcoded-trigger">
+                            @if($location == 'customer')
+                                <li class="active">
+                                    <a href="{{route('customer.index')}}">
+                                        <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Customer</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                            @else
+                                <li>
+                                    <a href="{{route('customer.index')}}">
+                                        <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Customer</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                            @endif
+                                @if($location == 'team')
+                                    <li class="active">
+                                        <a href="{{route('team.index')}}">
+                                            <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
+                                            <span class="pcoded-mtext" data-i18n="nav.form-components.main">Team</span>
+                                            <span class="pcoded-mcaret"></span>
+                                        </a>
+                                    </li>
+                                @else
+                                    <li>
+                                        <a href="{{route('team.index')}}">
+                                            <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
+                                            <span class="pcoded-mtext" data-i18n="nav.form-components.main">Team</span>
+                                            <span class="pcoded-mcaret"></span>
+                                        </a>
+                                    </li>
+                                @endif
+                            <li class="pcoded-hasmenu">
                                 <a href="javascript:void(0)">
                                     <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
                                     <span class="pcoded-mtext" data-i18n="nav.basic-components.main">Pages</span>
@@ -356,7 +395,7 @@
                                             <span class="pcoded-mcaret"></span>
                                         </a>
                                     </li>
-                                    <li class="active ">
+                                    <li class="">
                                         <a href="sample-page.html">
                                             <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                             <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Sample Page</span>
@@ -491,6 +530,10 @@
 <script src="{{asset('backoffice/assets/js/vartical-demo.js')}}"></script>
 <script src="{{asset('backoffice/assets/js/jquery.mCustomScrollbar.concat.min.js')}}"></script>
 <script src="{{asset('backoffice/assets/js/bootstrap-growl.min.js')}}"></script>
+
+<!-- sweetalert -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
 <livewire:scripts/>
 @yield('script')

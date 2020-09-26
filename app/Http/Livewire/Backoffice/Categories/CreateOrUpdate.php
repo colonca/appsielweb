@@ -51,7 +51,7 @@ class CreateOrUpdate extends Component
         $this->edit = true;
     }
 
-    private function newOrEditCategory(){
+    private function newOrEditCategory() {
         $category = $this->edit ? Category::findOrFail($this->category_id) : new Category();
         $category->name = strtoupper($this->name);
         $category->body = strtoupper($this->description);
@@ -60,7 +60,7 @@ class CreateOrUpdate extends Component
         return $result;
     }
 
-    public function limpiar(){
+    public function limpiar() {
         $this->name = '';
         $this->description = '';
         $this->category_id = '';

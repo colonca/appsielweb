@@ -1,5 +1,5 @@
 <div>
-    @php($url = ['Inicio'=>url('/home')])
+    @php($url = ['Categoría'=>route('categories.index')])
 
     <livewire:backoffice.breadcrumbs title="Categories" :urls="$url" description="Gestiona las categorías del blog"/>
 
@@ -38,7 +38,7 @@
                                     <td>--</td>
                                     <td>
                                         <button wire:click="edit({{$item->id}})" class="btn btn-primary btn-outline-primary btn-icon waves-effect" data-toggle="tooltip" data-placement="top" title data-original-title="Editar Categoría"><i class="ti-pencil" style="margin-left: 5px"></i></button>
-                                        <button wire:click="delete({{$item->id}})" class="btn btn-danger btn-outline-primary btn-icon waves-effect" data-toggle="tooltip" data-placement="top" title data-original-title="Editar Categoría"><i class="ti-pencil" style="margin-left: 5px"></i></button>
+                                        <button wire:click="delete({{$item->id}})" class="btn btn-danger btn-outline-danger btn-icon waves-effect" data-toggle="tooltip" data-placement="top" title data-original-title="Editar Categoría"><i class="ti-trash" style="margin-left: 5px"></i></button>
                                     </td>
                                 </tr>
                             @endforeach
