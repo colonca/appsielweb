@@ -12,6 +12,26 @@
 
     @include('layouts.campaing')
 
+    <div class="wraper">
+        <h1 class="text-gray-400 md:text-2xl lg:text-4xl text-center font-bold mt-8">Quienes Somos</h1>
+        <p class="text-justify md:text-center md:text-xl my-4">Somos una empresa Vallenata dedicada al desarrollo de sistemas de información para empresas y negocios de distintos sectores. En APPSIEL S.A.S. desarrollamos y comercializamos aplicaciones web como servicio de software en la nube. Nos enfocamos en el crecimiento empresarial de nuestros clientes, a través del desarrollo de sistemas de información.</p>
+    </div>
+
+    <div class="wraper">
+        <div class="md:flex justify-center items-center my-4">
+            <div class="flex flex-col items-center md:w-1/2 mr-4">
+                <img src="{{asset('svg/objetivo.svg')}}" class="w-32 h-32 md:w-56 md:h-56" alt="">
+                <div class="text-gray-400 md:text-2xl lg:text-4xl text-center font-bold">Mision</div>
+                <div class="md:text-2xl text-center">Facilitar la vida y el crecimiento empresarial a través de sistemas de información que aseguren la sostenibilidad de las organizaciones.</div class="md:text-lg">
+            </div>
+            <div class="flex flex-col items-center md:w-1/2">
+                <img src="{{asset('svg/vision.svg')}}" class="w-32 h-32 md:w-56 md:h-56" alt="">
+                <div class="text-gray-400 md:text-2xl lg:text-4xl text-center font-bold">Vision</div>
+                <div class="md:text-2xl text-center">Ser líderes tecnológicos a nivel mundial en el desarrollo de sistemas de información para empresas y emprendedores.</div>
+            </div>
+        </div>
+    </div>
+
     <livewire:about.team/>
 
     <div class="wraper">

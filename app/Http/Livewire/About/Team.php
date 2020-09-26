@@ -20,4 +20,8 @@ class Team extends Component
         return view('livewire.about.team');
     }
 
+    public function setCurrent(int $id){
+        $this->current = TeamModel::find($id);
+    }
+
 }
