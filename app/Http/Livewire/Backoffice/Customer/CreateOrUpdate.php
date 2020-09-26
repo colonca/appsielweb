@@ -38,7 +38,7 @@ class CreateOrUpdate extends Component
             ]);
         } else {
             $this->emit('message', [
-                'body' => 'El Cliente <strong>' . $this->name . '</strong> no fue almacenado. Error: ' . $result,
+                'body' => 'El Cliente <strong>' . $this->description . '</strong> no fue almacenado. Error: ' . $result,
                 'type' => 'danger'
             ]);
         }

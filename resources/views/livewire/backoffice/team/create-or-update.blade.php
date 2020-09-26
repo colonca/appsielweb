@@ -16,36 +16,36 @@
                 </div>
             </div>
             <div class="card-block" style="">
-                <h4 class="sub-title">{{$edit? 'Editar' : 'Nuevo'}} Cliente</h4>
+                <h4 class="sub-title">{{$edit? 'Editar' : 'Nuevo'}} Miembro</h4>
                 <div class="col-md-12">
                     <form class="form-horizontal" wire:submit.prevent="save" enctype="multipart/form-data">
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label><strong>Imagen</strong></label>
-                                    <input wire:model.lazy="image" type="file" class="form-control form-control-round">
+                                    <label><strong>Foto</strong></label>
+                                    <input wire:model.lazy="photo" type="file" class="form-control form-control-round">
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label><strong>Descripción</strong></label>
-                                    <input wire:model.lazy="description" type="text"
+                                    <label><strong>Nombre</strong></label>
+                                    <input wire:model.lazy="name" type="text"
                                            class="form-control form-control-round"
-                                           placeholder="Escriba el nombre del cliente" required>
+                                           placeholder="Escriba el nombre del miembro" required>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label><strong>Url</strong></label>
-                                    <input wire:model.lazy="url" type="url" class="form-control form-control-round"
-                                           placeholder="Escriba la url del cliente" required>
+                                    <label><strong>Frase</strong></label>
+                                    <input wire:model.lazy="phrase" type="text" class="form-control form-control-round"
+                                           placeholder="Escriba una frase caracteristica" required>
                                 </div>
                             </div>
-                            <div class="col-md-2">
+                            <div class="col-md-12">
                                 <div class="form-group">
-                                        <label for="show"><strong>Show</strong></label>
-                                        <input wire:model.lazy="show" type="checkbox" id="show"
-                                               class="form-control form-control-round" >
+                                    <label><strong>Profesión</strong></label>
+                                    <input wire:model.lazy="profession" type="text" placeholder="Escriba la profesión"
+                                           class="form-control form-control-round" >
                                 </div>
                             </div>
                         </div>
@@ -62,5 +62,4 @@
             </div>
         </div>
     </div>
-
 </div>

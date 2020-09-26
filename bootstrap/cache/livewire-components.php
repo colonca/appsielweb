@@ -5,6 +5,8 @@
   'backoffice.categories.index' => 'App\\Http\\Livewire\\Backoffice\\Categories\\Index',
   'backoffice.customer.create-or-update' => 'App\\Http\\Livewire\\Backoffice\\Customer\\CreateOrUpdate',
   'backoffice.customer.index' => 'App\\Http\\Livewire\\Backoffice\\Customer\\Index',
+  'backoffice.team.create-or-update' => 'App\\Http\\Livewire\\Backoffice\\Team\\CreateOrUpdate',
+  'backoffice.team.index' => 'App\\Http\\Livewire\\Backoffice\\Team\\Index',
   'blog.comment' => 'App\\Http\\Livewire\\Blog\\Comment',
   'blog.comments' => 'App\\Http\\Livewire\\Blog\\Comments',
   'blog.noticias' => 'App\\Http\\Livewire\\Blog\\Noticias',
