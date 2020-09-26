@@ -14,8 +14,8 @@
                     </blockquote>
                     <div class="peoples">
                         @foreach($team as $person)
-                            <div class="worker">
-                                <img loading="lazy" class="worker__img" src="{{$person->photo}}" alt="{{$person->name}}">
+                            <div class="worker" wire:click="setCurrent({{$person->id}})">
+                                <img loading="lazy" class="worker__img" src="{{asset($person->photo)}}" alt="{{$person->name}}">
                                 <div class="worker__descripcion">
                                     <h3 class="worker__nombre">{{$person->name}}</h3>
                                     <p class="worker__profesion">{{$person->profession}}</p>
