@@ -1,15 +1,15 @@
 <div>
     <div>
-        @php($url = ['Customer'=>route('customer.index')])
+        @php($url = ['Team'=>route('team.index')])
 
-        <livewire:backoffice.breadcrumbs title="Customer" :urls="$url" description="Gestiona los clientes."/>
+        <livewire:backoffice.breadcrumbs title="Team" :urls="$url" description="Gestiona el equipo de trabajo."/>
 
         <div class="row">
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-header">
-                        <h5>Listado de Clientes</h5>
-{{--                        <span>use class <code>table-hover</code> inside table element</span>--}}
+                        <h5>Equipo de Trabajo</h5>
+                        {{--                        <span>use class <code>table-hover</code> inside table element</span>--}}
                         <div class="card-header-right">
                             <ul class="list-unstyled card-option">
                                 <li><i class="fa fa-chevron-left"></i></li>
@@ -25,27 +25,27 @@
                             <table id="tabla" class="table table-hover">
                                 <thead>
                                 <tr>
-                                    <th>Descripción</th>
+                                    <th>Nombre</th>
                                     <th>Imagen</th>
-                                    <th>Url</th>
-                                    <th>Show</th>
+                                    <th>Profesión</th>
+                                    <th>Frase</th>
                                     <th>Acciones</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                @foreach($customers as $item)
+                                @foreach($teams as $item)
                                     <tr>
-                                        <th>{{$item->description}}</th>
-                                        <td><a target="_blank" href="{{asset('../storage/app/docs/customer/'.$item->image)}}">{{$item->image}}</a></td>
-                                        <td>{{$item->url}}</td>
-                                        <td>{{$item->show == 1 ? 'SI' : 'NO'}}</td>
+                                        <th>{{$item->name}}</th>
+                                        <td><a target="_blank" href="{{asset('../storage/app/docs/team/'.$item->photo)}}">{{$item->photo}}</a></td>
+                                        <td>{{$item->profession}}</td>
+                                        <td>{{$item->phrase}}</td>
                                         <td>
-                                            <button wire:click="edit({{$item->id}})" class="btn btn-primary btn-outline-primary btn-icon waves-effect" data-toggle="tooltip" data-placement="top" title data-original-title="Editar Cliente"><i class="ti-pencil" style="margin-left: 5px"></i></button>
-                                            <button wire:click="delete({{$item->id}})" class="btn btn-danger btn-outline-danger btn-icon waves-effect" data-toggle="tooltip" data-placement="top" title data-original-title="Eliminar Cliente"><i class="ti-trash" style="margin-left: 5px"></i></button>
+                                            <button wire:click="edit({{$item->id}})" class="btn btn-primary btn-outline-primary btn-icon waves-effect" data-toggle="tooltip" data-placement="top" title data-original-title="Editar"><i class="ti-pencil" style="margin-left: 5px"></i></button>
+                                            <button wire:click="delete({{$item->id}})" class="btn btn-danger btn-outline-danger btn-icon waves-effect" data-toggle="tooltip" data-placement="top" title data-original-title="Eliminar"><i class="ti-trash" style="margin-left: 5px"></i></button>
                                         </td>
                                     </tr>
                                 @endforeach
-                                {{$customers->links()}}
+                                {{$teams->links()}}
                                 </tbody>
                             </table>
                         </div>
@@ -54,10 +54,11 @@
             </div>
 
             <div class="col-sm-12 col-md-4">
-                <livewire:backoffice.customer.create-or-update/>
+                <livewire:backoffice.team.create-or-update/>
             </div>
         </div>
 
     </div>
 
 </div>
+

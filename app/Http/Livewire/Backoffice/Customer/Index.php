@@ -37,7 +37,7 @@ class Index extends Component
             ]);
         }else{
             $this->emit('message', [
-                'body' => 'El Cliente <strong>' . $customer->name . '</strong> no fue eliminad0 correctamente.',
+                'body' => 'El Cliente <strong>' . $customer->name . '</strong> no fue eliminado correctamente.',
                 'type' => 'danger'
             ]);
         }
