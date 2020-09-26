@@ -511,6 +511,10 @@
 <script src="{{asset('backoffice/assets/js/jquery.mCustomScrollbar.concat.min.js')}}"></script>
 <script src="{{asset('backoffice/assets/js/bootstrap-growl.min.js')}}"></script>
 
+<!-- sweetalert -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
 <livewire:scripts/>
 @yield('script')
 <script>

@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::view('/','home');
-Route::view('/admin','backoffice/layouts/admin');
+Route::get('/admin','HomeController@inicio')->name('admin');
 Route::view('/contactUs','contactUs');
 Route::view('/aboutUs','aboutUs');
 Route::view('/landingpage','campaigns/ebookLandingPage');
