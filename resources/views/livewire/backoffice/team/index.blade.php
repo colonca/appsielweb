@@ -36,7 +36,7 @@
                                 @foreach($teams as $item)
                                     <tr>
                                         <th>{{$item->name}}</th>
-                                        <td><a target="_blank" href="{{asset('../storage/app/docs/team/'.$item->photo)}}">{{$item->photo}}</a></td>
+                                        <td><a target="_blank" href="{{asset('../storage/app/docs/team/'.$item->photo)}}"><img src="{{asset('../storage/app/docs/team/'.$item->photo)}}" alt="prod img" class="img-fluid" width="40px"></a></td>
                                         <td>{{$item->profession}}</td>
                                         <td>{{$item->phrase}}</td>
                                         <td>

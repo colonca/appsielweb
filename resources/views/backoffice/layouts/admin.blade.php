@@ -2,7 +2,7 @@
 <html lang="en" xmlns:livewire="http://www.w3.org/1999/html">
 
 <head>
-    <title>Gradient Able bootstrap admin template by codedthemes </title>
+    <title>.:: Appsiel - Sistemas para el crecimiento empresarial </title>
     <!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -10,6 +10,8 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <!-- Meta -->
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -19,7 +21,7 @@
           content="flat ui, admin , Flat ui, Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
     <meta name="author" content="codedthemes">
     <!-- Favicon icon -->
-    <link rel="icon" href="{{asset('backoffice/assets/images/favicon.ico')}}" type="image/x-icon">
+    <link rel="icon" href="{{asset('images/favicon.ico')}}" type="image/x-icon">
     <!-- Google font-->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
     <!-- Required Fremwork -->
@@ -75,7 +77,7 @@
                         </div>
                     </div>
                     <a href="index.html">
-                        <img class="img-fluid" src="{{asset('backoffice/assets/images/logo.png')}}" alt="Theme-Logo"/>
+                        <img class="img-fluid" src="{{asset('images/Lg_ 1.png')}}" alt="Theme-Logo" width="100px"/>
                     </a>
                     <a class="mobile-options">
                         <i class="ti-more"></i>
@@ -97,69 +99,17 @@
                             </div>
                         </li>
                         <li>
-                            <a href="#!" onclick="javascript:toggleFullScreen()">
+                            <a href="#" onclick="javascript:toggleFullScreen()">
                                 <i class="ti-fullscreen"></i>
                             </a>
                         </li>
                     </ul>
                     <ul class="nav-right">
-                        <li class="header-notification">
-                            <a href="#!">
-                                <i class="ti-bell"></i>
-                                <span class="badge bg-c-pink"></span>
-                            </a>
-                            <ul class="show-notification">
-                                <li>
-                                    <h6>Notifications</h6>
-                                    <label class="label label-danger">New</label>
-                                </li>
-                                <li>
-                                    <div class="media">
-                                        <img class="d-flex align-self-center img-radius"
-                                             src="{{asset('backoffice/assets/images/avatar-2.jpg')}}"
-                                             alt="Generic placeholder image">
-                                        <div class="media-body">
-                                            <h5 class="notification-user">John Doe</h5>
-                                            <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer
-                                                elit.</p>
-                                            <span class="notification-time">30 minutes ago</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="media">
-                                        <img class="d-flex align-self-center img-radius"
-                                             src="{{asset('backoffice/assets/images/avatar-4.jpg')}}"
-                                             alt="Generic placeholder image">
-                                        <div class="media-body">
-                                            <h5 class="notification-user">Joseph William</h5>
-                                            <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer
-                                                elit.</p>
-                                            <span class="notification-time">30 minutes ago</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="media">
-                                        <img class="d-flex align-self-center img-radius"
-                                             src="{{asset('backoffice/assets/images/avatar-3.jpg')}}"
-                                             alt="Generic placeholder image">
-                                        <div class="media-body">
-                                            <h5 class="notification-user">Sara Soudein</h5>
-                                            <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer
-                                                elit.</p>
-                                            <span class="notification-time">30 minutes ago</span>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-
                         <li class="user-profile header-notification">
                             <a href="#!">
                                 <img src="{{asset('backoffice/assets/images/avatar-4.jpg')}}" class="img-radius"
                                      alt="User-Profile-Image">
-                                <span>John Doe</span>
+                                <span>{{\Illuminate\Support\Facades\Auth::user()->name}}</span>
                                 <i class="ti-angle-down"></i>
                             </a>
                             <ul class="show-notification profile-notification">
@@ -169,20 +119,10 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="user-profile.html">
-                                        <i class="ti-user"></i> Profile
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="auth-lock-screen.html">
-                                        <i class="ti-lock"></i> Lock Screen
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="auth-normal-sign-in.html">
-                                        <i class="ti-layout-sidebar-left"></i> Logout
-                                    </a>
+                                    <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i class="ti-layout-sidebar-left"></i> Logout</a>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        {{ csrf_field() }}
+                                    </form>
                                 </li>
                             </ul>
                         </li>
@@ -206,98 +146,23 @@
                         </div>
                         <div class="pcoded-navigatio-lavel" data-i18n="nav.category.navigation">Usuario</div>
                         <ul class="pcoded-item pcoded-left-item">
-                            <li class="">
-                                <a href="index.html">
+                            @if($location == 'inicio')
+                            <li class="active">
+                                <a href="{{route('admin')}}">
                                     <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
                                     <span class="pcoded-mtext" data-i18n="nav.dash.main">Dashboard</span>
                                     <span class="pcoded-mcaret"></span>
                                 </a>
                             </li>
-                            <li class="pcoded-hasmenu">
-                                <a href="javascript:void(0)">
-                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
-                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.main">Components</span>
-                                    <span class="pcoded-mcaret"></span>
-                                </a>
-                                <ul class="pcoded-submenu">
-                                    <li class=" ">
-                                        <a href="accordion.html">
-                                            <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                            <span class="pcoded-mtext"
-                                                  data-i18n="nav.basic-components.alert">Accordion</span>
-                                            <span class="pcoded-mcaret"></span>
-                                        </a>
-                                    </li>
-                                    <li class=" ">
-                                        <a href="breadcrumb.html">
-                                            <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                            <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Breadcrumbs</span>
-                                            <span class="pcoded-mcaret"></span>
-                                        </a>
-                                    </li>
-                                    <li class=" ">
-                                        <a href="button.html">
-                                            <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                            <span class="pcoded-mtext"
-                                                  data-i18n="nav.basic-components.alert">Button</span>
-                                            <span class="pcoded-mcaret"></span>
-                                        </a>
-                                    </li>
-                                    <li class=" ">
-                                        <a href="tabs.html">
-                                            <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                            <span class="pcoded-mtext"
-                                                  data-i18n="nav.basic-components.breadcrumbs">Tabs</span>
-                                            <span class="pcoded-mcaret"></span>
-                                        </a>
-                                    </li>
-                                    <li class=" ">
-                                        <a href="color.html">
-                                            <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                            <span class="pcoded-mtext"
-                                                  data-i18n="nav.basic-components.alert">Color</span>
-                                            <span class="pcoded-mcaret"></span>
-                                        </a>
-                                    </li>
-                                    <li class=" ">
-                                        <a href="label-badge.html">
-                                            <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                            <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Label Badge</span>
-                                            <span class="pcoded-mcaret"></span>
-                                        </a>
-                                    </li>
-                                    <li class=" ">
-                                        <a href="tooltip.html">
-                                            <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                            <span class="pcoded-mtext"
-                                                  data-i18n="nav.basic-components.alert">Tooltip</span>
-                                            <span class="pcoded-mcaret"></span>
-                                        </a>
-                                    </li>
-                                    <li class=" ">
-                                        <a href="typography.html">
-                                            <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                            <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Typography</span>
-                                            <span class="pcoded-mcaret"></span>
-                                        </a>
-                                    </li>
-                                    <li class=" ">
-                                        <a href="notification.html">
-                                            <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                            <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Notification</span>
-                                            <span class="pcoded-mcaret"></span>
-                                        </a>
-                                    </li>
-                                    <li class=" ">
-                                        <a href="icon-themify.html">
-                                            <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                            <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Themify</span>
-                                            <span class="pcoded-mcaret"></span>
-                                        </a>
-                                    </li>
-
-                                </ul>
-                            </li>
+                            @else
+                                <li>
+                                    <a href="{{route('admin')}}">
+                                        <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.dash.main">Dashboard</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                            @endif
                         </ul>
                         <div class="pcoded-navigatio-lavel" data-i18n="nav.category.forms">Blogs &amp; Post</div>
                         <ul class="pcoded-item pcoded-left-item">
@@ -337,7 +202,7 @@
                             @endif
                         </ul>
 
-                        <div class="pcoded-navigatio-lavel" data-i18n="nav.category.forms">Chart &amp; Maps</div>
+                        <div class="pcoded-navigatio-lavel" data-i18n="nav.category.forms">Customer &amp; Team</div>
                         <ul class="pcoded-item pcoded-left-item">
                             @if($location == 'customer')
                                 <li class="active">
@@ -373,83 +238,6 @@
                                         </a>
                                     </li>
                                 @endif
-                            <li class="pcoded-hasmenu">
-                                <a href="javascript:void(0)">
-                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
-                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.main">Pages</span>
-                                    <span class="pcoded-mcaret"></span>
-                                </a>
-                                <ul class="pcoded-submenu">
-                                    <li class=" ">
-                                        <a href="auth-normal-sign-in.html">
-                                            <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                            <span class="pcoded-mtext"
-                                                  data-i18n="nav.basic-components.alert">Login</span>
-                                            <span class="pcoded-mcaret"></span>
-                                        </a>
-                                    </li>
-                                    <li class=" ">
-                                        <a href="auth-sign-up.html">
-                                            <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                            <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Register</span>
-                                            <span class="pcoded-mcaret"></span>
-                                        </a>
-                                    </li>
-                                    <li class="">
-                                        <a href="sample-page.html">
-                                            <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                            <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Sample Page</span>
-                                            <span class="pcoded-mcaret"></span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                        </ul>
-
-                        <div class="pcoded-navigatio-lavel" data-i18n="nav.category.other">Other</div>
-                        <ul class="pcoded-item pcoded-left-item">
-                            <li class="pcoded-hasmenu ">
-                                <a href="javascript:void(0)">
-                                    <span class="pcoded-micon"><i class="ti-direction-alt"></i><b>M</b></span>
-                                    <span class="pcoded-mtext" data-i18n="nav.menu-levels.main">Menu Levels</span>
-                                    <span class="pcoded-mcaret"></span>
-                                </a>
-                                <ul class="pcoded-submenu">
-                                    <li class="">
-                                        <a href="javascript:void(0)">
-                                            <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                            <span class="pcoded-mtext" data-i18n="nav.menu-levels.menu-level-21">Menu Level 2.1</span>
-                                            <span class="pcoded-mcaret"></span>
-                                        </a>
-                                    </li>
-                                    <li class="pcoded-hasmenu ">
-                                        <a href="javascript:void(0)">
-                                            <span class="pcoded-micon"><i class="ti-direction-alt"></i></span>
-                                            <span class="pcoded-mtext" data-i18n="nav.menu-levels.menu-level-22.main">Menu Level 2.2</span>
-                                            <span class="pcoded-mcaret"></span>
-                                        </a>
-                                        <ul class="pcoded-submenu">
-                                            <li class="">
-                                                <a href="javascript:void(0)">
-                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                    <span class="pcoded-mtext"
-                                                          data-i18n="nav.menu-levels.menu-level-22.menu-level-31">Menu Level 3.1</span>
-                                                    <span class="pcoded-mcaret"></span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="">
-                                        <a href="javascript:void(0)">
-                                            <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                            <span class="pcoded-mtext" data-i18n="nav.menu-levels.menu-level-23">Menu Level 2.3</span>
-                                            <span class="pcoded-mcaret"></span>
-                                        </a>
-                                    </li>
-
-                                </ul>
-                            </li>
                         </ul>
                     </div>
                 </nav>
@@ -466,50 +254,6 @@
 </div>
 
 
-<!-- Warning Section Starts -->
-<!-- Older IE warning message -->
-<!--[if lt IE 9]>
-<div class="ie-warning">
-<h1>Warning!!</h1>
-<p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers
-    to access this website.</p>
-<div class="iew-container">
-    <ul class="iew-download">
-        <li>
-            <a href="http://www.google.com/chrome/">
-                <img src="{{asset('backoffice/assets/images/browser/chrome.png')}}" alt="Chrome">
-                <div>Chrome</div>
-            </a>
-        </li>
-        <li>
-            <a href="https://www.mozilla.org/en-US/firefox/new/">
-                <img src="{{asset('backoffice/assets/images/browser/firefox.png')}}" alt="Firefox">
-                <div>Firefox</div>
-            </a>
-        </li>
-        <li>
-            <a href="http://www.opera.com">
-                <img src="{{asset('backoffice/assets/images/browser/opera.png')}}" alt="Opera">
-                <div>Opera</div>
-            </a>
-        </li>
-        <li>
-            <a href="https://www.apple.com/safari/">
-                <img src="{{asset('backoffice/assets/images/browser/safari.png')}}" alt="Safari">
-                <div>Safari</div>
-            </a>
-        </li>
-        <li>
-            <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
-                <img src="{{asset('backoffice/assets/images/browser/ie.png')}}" alt="">
-                <div>IE (9 & above)</div>
-            </a>
-        </li>
-    </ul>
-</div>
-<p>Sorry for the inconvenience!</p>
-</div>
-<![endif]-->
 <!-- Warning Section Ends -->
 <!-- Required Jquery -->
 <script type="text/javascript" src="{{asset('backoffice/assets/js/jquery/jquery.min.js')}}"></script>

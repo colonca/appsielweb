@@ -56,8 +56,8 @@ class CreateOrUpdate extends Component
             if ($this->photo != '') {
                 //$team->image = $team->image;
                 $hoy = getdate();
-                $file = $this->image;
-                if (unlink("../storage/app/docs/team/" . $team->image)) {
+                $file = $this->photo;
+                if (unlink("../storage/app/docs/team/" . $team->photo)) {
                     $name = "Team_" . $hoy["year"] . $hoy["mon"] . $hoy["mday"] . $hoy["hours"] . $hoy["minutes"] . $hoy["seconds"] . "_" . $file->getClientOriginalExtension();
                     $path = public_path() . "/docs/customer/";
                     $this->photo->storePubliclyAs('/docs/team/', $name);
