@@ -36,7 +36,7 @@
                                 @foreach($customers as $item)
                                     <tr>
                                         <th>{{$item->description}}</th>
-                                        <td><a target="_blank" href="{{asset('../storage/app/docs/customer/'.$item->image)}}"><img src="{{asset('../storage/app/docs/customer/'.$item->image)}}" alt="prod img" class="img-fluid" width="40px"></a></td>
+                                        <td><a target="_blank" href="{{asset('storage/'.$item->image)}}"><img src="{{asset('storage/'.$item->image)}}" alt="prod img" class="img-fluid" width="40px"></a></td>
                                         <td>{{$item->url}}</td>
                                         <td>{{$item->show == 1 ? 'SI' : 'NO'}}</td>
                                         <td>

@@ -5,7 +5,7 @@
                 <div class="our__team__content">
                     <h2 class="our__team__title text-gray-400">Nuestro Equipo</h2>
                     <blockquote class="person">
-                        <img loading="lazy" class="person__img" src="{{asset($current->photo)}}" alt="{{$current->name}}">
+                        <img loading="lazy" class="person__img" src="{{asset('storage/'.$current->photo)}}" alt="{{$current->name}}">
                         <div class="person__descripcion">
                             <h3 class="person__nombre text-gray-400">{{$current->name}}</h3>
                             <p class="person__profesion">{{$current->profession}}</p>
@@ -15,7 +15,7 @@
                     <div class="peoples">
                         @foreach($team as $person)
                             <div class="worker" wire:click="setCurrent({{$person->id}})">
-                                <img loading="lazy" class="worker__img" src="{{asset($person->photo)}}" alt="{{$person->name}}">
+                                <img loading="lazy" class="worker__img" src="{{asset('storage/'.$person->photo)}}" alt="{{$person->name}}">
                                 <div class="worker__descripcion">
                                     <h3 class="worker__nombre">{{$person->name}}</h3>
                                     <p class="worker__profesion">{{$person->profession}}</p>

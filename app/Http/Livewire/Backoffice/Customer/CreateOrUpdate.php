@@ -3,6 +3,7 @@
 namespace App\Http\Livewire\Backoffice\Customer;
 
 use App\Models\Customer;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use Livewire\Component;
 use Livewire\WithFileUploads;
@@ -54,15 +55,9 @@ class CreateOrUpdate extends Component
         if ($this->edit) {
             $customer = Customer::findOrFail($this->customer_id);
             if ($this->image != '') {
-                //$customer->image = $customer->image;
-                $hoy = getdate();
-                $file = $this->image;
-                if(unlink("../storage/app/docs/customer/".$customer->image)) {
-                    $name = "Customer_" . $hoy["year"] . $hoy["mon"] . $hoy["mday"] . $hoy["hours"] . $hoy["minutes"] . $hoy["seconds"] . "_" . $file->getClientOriginalExtension();
-                    $path = public_path() . "/docs/customer/";
-                    $this->image->storePubliclyAs('/docs/customer/', $name);
-                    // $file->move($path, $name);
-                    $customer->image = $name;
+                if(Storage::delete($customer->image)) {
+                    $path = $this->image->store('customer');
+                    $customer->image = $path;
                 }
             }
         } else {
@@ -70,13 +65,10 @@ class CreateOrUpdate extends Component
             $this->validate([
                 'image' => 'required'
             ]);
-            $hoy = getdate();
-            $file = $this->image;
-            $name = "Customer_" . $hoy["year"] . $hoy["mon"] . $hoy["mday"] . $hoy["hours"] . $hoy["minutes"] . $hoy["seconds"] . "_" . $file->getClientOriginalExtension();
-            $path = public_path() . "/docs/customer";
-            $this->image->storePubliclyAs('/docs/customer/', $name);
+
+            $path = $this->image->store( 'customer');
             // $file->move($path, $name);
-            $customer->image = $name;
+            $customer->image = $path;
         }
         //$customer = $this->edit ? Customer::findOrFail($this->customer_id) : new Customer();
         $customer->description = strtoupper($this->description);

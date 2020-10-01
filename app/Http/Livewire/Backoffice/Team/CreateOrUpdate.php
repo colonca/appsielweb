@@ -3,6 +3,7 @@
 namespace App\Http\Livewire\Backoffice\Team;
 
 use App\Models\Team;
+use Illuminate\Support\Facades\Storage;
 use Livewire\Component;
 use Livewire\WithFileUploads;
 
@@ -54,15 +55,9 @@ class CreateOrUpdate extends Component
         if ($this->edit) {
             $team = Team::findOrFail($this->team_id);
             if ($this->photo != '') {
-                //$team->image = $team->image;
-                $hoy = getdate();
-                $file = $this->photo;
-                if (unlink("../storage/app/docs/team/" . $team->photo)) {
-                    $name = "Team_" . $hoy["year"] . $hoy["mon"] . $hoy["mday"] . $hoy["hours"] . $hoy["minutes"] . $hoy["seconds"] . "_" . $file->getClientOriginalExtension();
-                    $path = public_path() . "/docs/customer/";
-                    $this->photo->storePubliclyAs('/docs/team/', $name);
-                    // $file->move($path, $name);
-                    $team->photo = $name;
+                if (Storage::delete( $team->photo)) {
+                    $path = $this->photo->store('team');
+                    $team->photo = $path;
                 }
             }
         } else {
@@ -70,13 +65,9 @@ class CreateOrUpdate extends Component
             $this->validate([
                 'photo' => 'required'
             ]);
-            $hoy = getdate();
-            $file = $this->photo;
-            $name = "Team_" . $hoy["year"] . $hoy["mon"] . $hoy["mday"] . $hoy["hours"] . $hoy["minutes"] . $hoy["seconds"] . "_" . $file->getClientOriginalExtension();
-            $path = public_path() . "/docs/team";
-            $this->photo->storePubliclyAs('/docs/team/', $name);
+            $path = $this->photo->store('team');
             // $file->move($path, $name);
-            $team->photo = $name;
+            $team->photo = $path;
         }
         //$team = $this->edit ? Customer::findOrFail($this->customer_id) : new Customer();
         $team->name = strtoupper($this->name);
