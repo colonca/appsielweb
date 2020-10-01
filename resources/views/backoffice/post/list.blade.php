@@ -1,4 +1,5 @@
 @extends('backoffice.layouts.admin')
+
 @section('content')
     @php($url = ['Post'=>route('post.index')])
     <livewire:backoffice.breadcrumbs title="Post" :urls="$url" description="Gestiona los Post pertenecientes a una categoría."/>
@@ -56,6 +57,7 @@
     </div>
 @endsection
 @section('script')
+    <script src=""></script>
     <script type="text/javascript">
         function eliminar(event,id){
             event.preventDefault();
