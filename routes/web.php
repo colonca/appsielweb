@@ -27,7 +27,7 @@ Route::get('/campaña/Ebook', 'LandingPageController@documento')->name('camapañ
 Route::post('landingpage', 'LandingPageController@store')->name('landing.store');
 //Route::view('/categories','backoffice.categories.list')->name('categories.index');
 //GRUPO DE RUTAS PARA EL MODULO BLOG
-Route::group(['middleware' => 'auth', 'prefix' => 'backoffice/blog'], function () {
+Route::group(['middleware' => 'auth', 'prefix' => 'admin/backoffice'], function () {
     //CATEGORY
     Route::resource('categories', 'CategoryController');
     //POST
