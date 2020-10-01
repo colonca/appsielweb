@@ -25,8 +25,8 @@
                             <table id="tabla" class="table table-hover">
                                 <thead>
                                 <tr>
-                                    <th>Nombre</th>
                                     <th>Imagen</th>
+                                    <th>Nombre</th>
                                     <th>Profesión</th>
                                     <th>Frase</th>
                                     <th>Acciones</th>
@@ -35,8 +35,8 @@
                                 <tbody>
                                 @foreach($teams as $item)
                                     <tr>
-                                        <th>{{$item->name}}</th>
                                         <td><a target="_blank" href="{{asset('../storage/app/docs/team/'.$item->photo)}}"><img src="{{asset('../storage/app/docs/team/'.$item->photo)}}" alt="prod img" class="img-fluid" width="40px"></a></td>
+                                        <th>{{$item->name}}</th>
                                         <td>{{$item->profession}}</td>
                                         <td>{{$item->phrase}}</td>
                                         <td>
@@ -52,13 +52,10 @@
                     </div>
                 </div>
             </div>
-
             <div class="col-sm-12 col-md-4">
                 <livewire:backoffice.team.create-or-update/>
             </div>
         </div>
-
     </div>
-
 </div>
 
