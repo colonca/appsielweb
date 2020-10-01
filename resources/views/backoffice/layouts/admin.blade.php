@@ -59,7 +59,7 @@
     <div class="pcoded-overlay-box"></div>
     <div class="pcoded-container navbar-wrapper">
 
-        <nav class="navbar header-navbar pcoded-header">
+        <nav class="navbar header-navbar pcoded-header" style="background: linear-gradient(to right, #2D3748, #20D4B2)">
             <div class="navbar-wrapper">
                 <div class="navbar-logo">
                     <a class="mobile-menu" id="mobile-collapse" href="#!">
@@ -119,8 +119,11 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i class="ti-layout-sidebar-left"></i> Logout</a>
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    <a href="{{ route('logout') }}"
+                                       onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i
+                                            class="ti-layout-sidebar-left"></i> Logout</a>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                          style="display: none;">
                                         {{ csrf_field() }}
                                     </form>
                                 </li>
@@ -147,13 +150,14 @@
                         <div class="pcoded-navigatio-lavel" data-i18n="nav.category.navigation">Usuario</div>
                         <ul class="pcoded-item pcoded-left-item">
                             @if($location == 'inicio')
-                            <li class="active">
-                                <a href="{{route('admin')}}">
-                                    <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
-                                    <span class="pcoded-mtext" data-i18n="nav.dash.main">Dashboard</span>
-                                    <span class="pcoded-mcaret"></span>
-                                </a>
-                            </li>
+                                <li class="active">
+                                    <a href="{{route('admin')}}"
+                                       style="background: linear-gradient(to right, #2D3748, #20D4B2) !important">
+                                        <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.dash.main">Dashboard</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
                             @else
                                 <li>
                                     <a href="{{route('admin')}}">
@@ -167,13 +171,13 @@
                         <div class="pcoded-navigatio-lavel" data-i18n="nav.category.forms">Blogs &amp; Post</div>
                         <ul class="pcoded-item pcoded-left-item">
                             @if($location == 'categories')
-                            <li class="active">
-                                <a href="{{route('categories.index')}}">
-                                    <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
-                                    <span class="pcoded-mtext" data-i18n="nav.form-components.main">Categoría</span>
-                                    <span class="pcoded-mcaret"></span>
-                                </a>
-                            </li>
+                                <li class="active">
+                                    <a href="{{route('categories.index')}}" style="background: linear-gradient(to right, #2D3748, #20D4B2) !important">
+                                        <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Categoría</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
                             @else
                                 <li>
                                     <a href="{{route('categories.index')}}">
@@ -184,13 +188,13 @@
                                 </li>
                             @endif
                             @if($location == 'post')
-                            <li class="active">
-                                <a href="{{route('post.index')}}">
-                                    <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
-                                    <span class="pcoded-mtext" data-i18n="nav.form-components.main">Post</span>
-                                    <span class="pcoded-mcaret"></span>
-                                </a>
-                            </li>
+                                <li class="active">
+                                    <a href="{{route('post.index')}}" style="background: linear-gradient(to right, #2D3748, #20D4B2) !important">
+                                        <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Post</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
                             @else
                                 <li>
                                     <a href="{{route('post.index')}}">
@@ -206,7 +210,8 @@
                         <ul class="pcoded-item pcoded-left-item">
                             @if($location == 'customer')
                                 <li class="active">
-                                    <a href="{{route('customer.index')}}">
+                                    <a href="{{route('customer.index')}}"
+                                       style="background: linear-gradient(to right, #2D3748, #20D4B2) !important">
                                         <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
                                         <span class="pcoded-mtext" data-i18n="nav.form-components.main">Customer</span>
                                         <span class="pcoded-mcaret"></span>
@@ -221,23 +226,39 @@
                                     </a>
                                 </li>
                             @endif
-                                @if($location == 'team')
-                                    <li class="active">
-                                        <a href="{{route('team.index')}}">
-                                            <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
-                                            <span class="pcoded-mtext" data-i18n="nav.form-components.main">Team</span>
-                                            <span class="pcoded-mcaret"></span>
-                                        </a>
-                                    </li>
-                                @else
-                                    <li>
-                                        <a href="{{route('team.index')}}">
-                                            <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
-                                            <span class="pcoded-mtext" data-i18n="nav.form-components.main">Team</span>
-                                            <span class="pcoded-mcaret"></span>
-                                        </a>
-                                    </li>
-                                @endif
+                            @if($location == 'team')
+                                <li class="active">
+                                    <a href="{{route('team.index')}}"
+                                       style="background: linear-gradient(to right, #2D3748, #20D4B2) !important">
+                                        <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Team</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                            @else
+                                <li>
+                                    <a href="{{route('team.index')}}">
+                                        <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Team</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                            @endif
+                        </ul>
+                        <div class="pcoded-navigatio-lavel" data-i18n="nav.category.forms">Logout</div>
+                        <ul class="pcoded-item pcoded-left-item">
+                            <li>
+                                <a href="{{ route('logout') }}"
+                                   onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                    <span class="pcoded-micon"><i class="ti-layout-sidebar-left"></i><b>FC</b></span>
+                                    <span class="pcoded-mtext" data-i18n="nav.form-components.main">Logout</span>
+                                    <span class="pcoded-mcaret"></span>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                          style="display: none;">
+                                        {{ csrf_field() }}
+                                    </form>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </nav>
@@ -267,6 +288,7 @@
 <script type="text/javascript" src="{{asset('backoffice/assets/js/modernizr/css-scrollbars.js')}}"></script>
 
 <script src="{{asset('backoffice/assets/js/jquery-datatable/jquery.dataTables.js')}}"></script>
+<script src="{{asset('backoffice/assets/js/johnpolacek-stacktable/stacktable.js')}}"></script>
 
 <!-- Custom js -->
 <script type="text/javascript" src="{{asset('backoffice/assets/js/script.js')}}"></script>
@@ -282,13 +304,13 @@
 <livewire:scripts/>
 @yield('script')
 <script>
-    function notify(from, align, icon, type, animIn, animOut,body){
+    function notify(from, align, icon, type, animIn, animOut, body) {
         $.growl({
             icon: icon,
             title: '',
             message: body,
             url: ''
-        },{
+        }, {
             element: 'body',
             type: type,
             allow_dismiss: true,
@@ -323,8 +345,8 @@
                 '</div>'
         });
     };
-    livewire.on('message',message =>{
-       notify('top', 'right', 'fa fa-check', message.type,'animated bounceInRight', 'animated bounceOutRight',message.body,);
+    livewire.on('message', message => {
+        notify('top', 'right', 'fa fa-check', message.type, 'animated bounceInRight', 'animated bounceOutRight', message.body,);
 
     });
 </script>
