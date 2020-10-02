@@ -78,6 +78,7 @@ return [
     |
     */
 
+    // /home/u883985631/public_html
     'links' => [
         public_path('storage') => storage_path('app'),
     ],

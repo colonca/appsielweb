@@ -15,7 +15,7 @@
                     </div>
                     <div class="card-block">
                         <div class="usre-image">
-                            <img src="{{asset('../storage/app/docs/team/'.$item->photo)}}" class="img-radius"
+                            <img src="{{asset('storage/'.$item->photo)}}" class="img-radius"
                                  alt="User-Profile-Image" width="100px">
                         </div>
                         <h6 class="f-w-600 m-t-25 m-b-10">{{$item->name}}</h6>
