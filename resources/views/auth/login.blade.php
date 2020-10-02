@@ -7,14 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{asset('css/index.css')}}">
     <link rel="icon" type="image/png" href="{{asset('images/favicon.ico')}}" />
-    <title>Login - Appsiel</title>
+    <title>SIGN IN - Appsiel</title>
 </head>
 <body>
     <div class="w-screen h-screen bg-gray-900 flex justify-center items-center">
         <div class="w-11/12 mx-auto rounded-lg flex" style="height: 80%;">
             <div class="w-8/12 px-24 py-8 rounded-lg relative" style="background: url('{{asset('images/background_newsletter.jpg')}}') no-repeat;background-size: cover; ">
                 <div class="text-white text-lg absolute top-0 left-0 pl-8 pt-6">
-                    <img src="{{asset('images/Lg_ 1.png')}}" alt="Appsiel" class="h-16 md:h-24">
+                    <a href="{{url('/')}}">
+                        <img src="{{asset('images/Lg_ 1.png')}}" alt="Appsiel" class="h-16 md:h-24">
+                    </a>
                 </div>
                 <div class="w-3/5 absolute pl-8 pt-6" style="top:50%; left: 0; transform: translateY(-50%)">
                     <div class="text-gray-400  md:text-lg lg:text-2xl font-bold text-left">Sistemas para el crecimiento empresarial</div>

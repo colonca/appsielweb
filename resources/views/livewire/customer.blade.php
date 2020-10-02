@@ -9,7 +9,7 @@
                         @foreach($customers as $customer)
                             @if($customer->show)
                                 <div class="splide__slide flex items-center justify-center flex-wrap max-w-sm rounded-lg shadow-ld">
-                                    <a href="{{$customer->url}}"><img src="{{asset($customer->image)}}" class="w-10/12" alt="{{$customer->desription}}"></a>
+                                    <a href="{{$customer->url}}"><img src="{{asset('storage/'.$customer->image)}}" class="w-10/12" alt="{{$customer->desription}}"></a>
                                 </div>
                             @endif
                         @endforeach
